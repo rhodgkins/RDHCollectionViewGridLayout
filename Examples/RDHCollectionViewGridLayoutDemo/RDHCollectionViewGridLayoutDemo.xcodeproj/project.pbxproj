@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		442BF3F517896E1D003FAB93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 442BF3F417896E1D003FAB93 /* UIKit.framework */; };
+		442BF3F717896E1D003FAB93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 442BF3F617896E1D003FAB93 /* Foundation.framework */; };
+		442BF3F917896E1D003FAB93 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 442BF3F817896E1D003FAB93 /* CoreGraphics.framework */; };
+		442BF3FF17896E1D003FAB93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 442BF3FD17896E1D003FAB93 /* InfoPlist.strings */; };
+		442BF40117896E1D003FAB93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 442BF40017896E1D003FAB93 /* main.m */; };
+		442BF40517896E1D003FAB93 /* RDHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 442BF40417896E1D003FAB93 /* RDHAppDelegate.m */; };
+		442BF40717896E1D003FAB93 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 442BF40617896E1D003FAB93 /* Default.png */; };
+		442BF40917896E1D003FAB93 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 442BF40817896E1D003FAB93 /* Default@2x.png */; };
+		442BF40B17896E1D003FAB93 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 442BF40A17896E1D003FAB93 /* Default-568h@2x.png */; };
+		442BF41317896E5D003FAB93 /* RDHDemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 442BF41217896E5D003FAB93 /* RDHDemoCell.m */; };
+		442BF41617896E84003FAB93 /* RDHDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 442BF41517896E84003FAB93 /* RDHDemoViewController.m */; };
+		4460308B178976580010D593 /* RDHCollectionViewGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4460308A178976580010D593 /* RDHCollectionViewGridLayout.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		442BF3F117896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RDHCollectionViewGridLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		442BF3F417896E1D003FAB93 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		442BF3F617896E1D003FAB93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		442BF3F817896E1D003FAB93 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		442BF3FC17896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RDHCollectionViewGridLayoutDemo-Info.plist"; sourceTree = "<group>"; };
+		442BF3FE17896E1D003FAB93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		442BF40017896E1D003FAB93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		442BF40217896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RDHCollectionViewGridLayoutDemo-Prefix.pch"; sourceTree = "<group>"; };
+		442BF40317896E1D003FAB93 /* RDHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDHAppDelegate.h; sourceTree = "<group>"; };
+		442BF40417896E1D003FAB93 /* RDHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDHAppDelegate.m; sourceTree = "<group>"; };
+		442BF40617896E1D003FAB93 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		442BF40817896E1D003FAB93 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		442BF40A17896E1D003FAB93 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		442BF41117896E5D003FAB93 /* RDHDemoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDHDemoCell.h; sourceTree = "<group>"; };
+		442BF41217896E5D003FAB93 /* RDHDemoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDHDemoCell.m; sourceTree = "<group>"; };
+		442BF41417896E84003FAB93 /* RDHDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDHDemoViewController.h; sourceTree = "<group>"; };
+		442BF41517896E84003FAB93 /* RDHDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDHDemoViewController.m; sourceTree = "<group>"; };
+		44603089178976580010D593 /* RDHCollectionViewGridLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDHCollectionViewGridLayout.h; sourceTree = "<group>"; };
+		4460308A178976580010D593 /* RDHCollectionViewGridLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDHCollectionViewGridLayout.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		442BF3EE17896E1D003FAB93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				442BF3F517896E1D003FAB93 /* UIKit.framework in Frameworks */,
+				442BF3F717896E1D003FAB93 /* Foundation.framework in Frameworks */,
+				442BF3F917896E1D003FAB93 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		442BF3E817896E1D003FAB93 = {
+			isa = PBXGroup;
+			children = (
+				442BF3FA17896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo */,
+				442BF3F317896E1D003FAB93 /* Frameworks */,
+				442BF3F217896E1D003FAB93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		442BF3F217896E1D003FAB93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				442BF3F117896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		442BF3F317896E1D003FAB93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				442BF3F417896E1D003FAB93 /* UIKit.framework */,
+				442BF3F617896E1D003FAB93 /* Foundation.framework */,
+				442BF3F817896E1D003FAB93 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		442BF3FA17896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo */ = {
+			isa = PBXGroup;
+			children = (
+				442BF40317896E1D003FAB93 /* RDHAppDelegate.h */,
+				442BF40417896E1D003FAB93 /* RDHAppDelegate.m */,
+				442BF41417896E84003FAB93 /* RDHDemoViewController.h */,
+				442BF41517896E84003FAB93 /* RDHDemoViewController.m */,
+				442BF41117896E5D003FAB93 /* RDHDemoCell.h */,
+				442BF41217896E5D003FAB93 /* RDHDemoCell.m */,
+				44603088178976580010D593 /* RDHCollectionViewGridLayout */,
+				442BF3FB17896E1D003FAB93 /* Supporting Files */,
+			);
+			path = RDHCollectionViewGridLayoutDemo;
+			sourceTree = "<group>";
+		};
+		442BF3FB17896E1D003FAB93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				442BF3FC17896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo-Info.plist */,
+				442BF3FD17896E1D003FAB93 /* InfoPlist.strings */,
+				442BF40017896E1D003FAB93 /* main.m */,
+				442BF40217896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo-Prefix.pch */,
+				442BF40617896E1D003FAB93 /* Default.png */,
+				442BF40817896E1D003FAB93 /* Default@2x.png */,
+				442BF40A17896E1D003FAB93 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44603088178976580010D593 /* RDHCollectionViewGridLayout */ = {
+			isa = PBXGroup;
+			children = (
+				44603089178976580010D593 /* RDHCollectionViewGridLayout.h */,
+				4460308A178976580010D593 /* RDHCollectionViewGridLayout.m */,
+			);
+			name = RDHCollectionViewGridLayout;
+			path = ../../../RDHCollectionViewGridLayout;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		442BF3F017896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 442BF40E17896E1D003FAB93 /* Build configuration list for PBXNativeTarget "RDHCollectionViewGridLayoutDemo" */;
+			buildPhases = (
+				442BF3ED17896E1D003FAB93 /* Sources */,
+				442BF3EE17896E1D003FAB93 /* Frameworks */,
+				442BF3EF17896E1D003FAB93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RDHCollectionViewGridLayoutDemo;
+			productName = RDHCollectionViewGridLayoutDemo;
+			productReference = 442BF3F117896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		442BF3E917896E1D003FAB93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RDH;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Rich H";
+			};
+			buildConfigurationList = 442BF3EC17896E1D003FAB93 /* Build configuration list for PBXProject "RDHCollectionViewGridLayoutDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 442BF3E817896E1D003FAB93;
+			productRefGroup = 442BF3F217896E1D003FAB93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				442BF3F017896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		442BF3EF17896E1D003FAB93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				442BF3FF17896E1D003FAB93 /* InfoPlist.strings in Resources */,
+				442BF40717896E1D003FAB93 /* Default.png in Resources */,
+				442BF40917896E1D003FAB93 /* Default@2x.png in Resources */,
+				442BF40B17896E1D003FAB93 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		442BF3ED17896E1D003FAB93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				442BF40117896E1D003FAB93 /* main.m in Sources */,
+				442BF40517896E1D003FAB93 /* RDHAppDelegate.m in Sources */,
+				442BF41617896E84003FAB93 /* RDHDemoViewController.m in Sources */,
+				442BF41317896E5D003FAB93 /* RDHDemoCell.m in Sources */,
+				4460308B178976580010D593 /* RDHCollectionViewGridLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		442BF3FD17896E1D003FAB93 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				442BF3FE17896E1D003FAB93 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		442BF40C17896E1D003FAB93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		442BF40D17896E1D003FAB93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		442BF40F17896E1D003FAB93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RDHCollectionViewGridLayoutDemo/RDHCollectionViewGridLayoutDemo-Prefix.pch";
+				INFOPLIST_FILE = "RDHCollectionViewGridLayoutDemo/RDHCollectionViewGridLayoutDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		442BF41017896E1D003FAB93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RDHCollectionViewGridLayoutDemo/RDHCollectionViewGridLayoutDemo-Prefix.pch";
+				INFOPLIST_FILE = "RDHCollectionViewGridLayoutDemo/RDHCollectionViewGridLayoutDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		442BF3EC17896E1D003FAB93 /* Build configuration list for PBXProject "RDHCollectionViewGridLayoutDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				442BF40C17896E1D003FAB93 /* Debug */,
+				442BF40D17896E1D003FAB93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		442BF40E17896E1D003FAB93 /* Build configuration list for PBXNativeTarget "RDHCollectionViewGridLayoutDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				442BF40F17896E1D003FAB93 /* Debug */,
+				442BF41017896E1D003FAB93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 442BF3E917896E1D003FAB93 /* Project object */;
+}
