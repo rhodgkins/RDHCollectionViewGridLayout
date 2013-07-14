@@ -158,7 +158,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44D02F821792EB2700D7F583 /* Build configuration list for PBXNativeTarget "RDHColletionViewLayoutPST" */;
 			buildPhases = (
-				44D0302A1792F36F00D7F583 /* ShellScript */,
 				44D02F611792EB2700D7F583 /* Sources */,
 				44D02F621792EB2700D7F583 /* Frameworks */,
 				44D02F631792EB2700D7F583 /* Resources */,
@@ -228,22 +227,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		44D0302A1792F36F00D7F583 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		44D02F611792EB2700D7F583 /* Sources */ = {
