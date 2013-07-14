@@ -7,26 +7,10 @@ If PSTCollectionView is being used, use the `RDHCollectionViewGridLayout/PST` po
 
 This layout provides simple options for customisation of a collection view as a grid layout.
 
-The following example is with a `lineSpacing` of 5 and `itemSpacing` of 10. Each section starts on a new line (`sectionsStartOnNewLine` is `YES`).
-
-![Example image 1](/Examples/images/5-line, 10-item.png)
-
-
-This is the same as the above but the `sectionsStartOnNewLine` is `NO`.
-
-![Vertical scrolling](/Examples/images/vertical.png)
-
-
-Horizontal scrolling
-
-![Horizontal scrolling](/Examples/images/horizontal.png)
-
-
-
 Properties
 ----------
 
-```
+``` objective-c
 /**
  * A vertical direction will constrain the layout by rows (lineItemCount per row), a horizontal direction by columns
  (lineItemCount per column).
@@ -84,3 +68,23 @@ Properties
 @property (nonatomic, assign) BOOL sectionsStartOnNewLine;
 
 ````
+
+Examples
+--------
+
+
+The following example is with a `lineSpacing` of 5 and `itemSpacing` of 10. Each section starts on a new line (`sectionsStartOnNewLine` is `YES`).
+
+![Example image 1](/Examples/images/5-line, 10-item.png)
+
+
+This is the same as the above but the `sectionsStartOnNewLine` is `NO`.
+
+![Vertical scrolling](/Examples/images/vertical.png)
+
+
+Horizontal scrolling
+
+![Horizontal scrolling](/Examples/images/horizontal.png)
+
+
