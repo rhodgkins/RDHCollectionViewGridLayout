@@ -11,16 +11,20 @@
 #import "RDHCollectionViewGridLayout.h"
 
 #import "RDHDemoCell.h"
+#import "RDHDemoSectionHeader.h"
 
 #define RDH_RANDOM_DATA 0
 
 static NSString *const CELL_IDENTIFIER = @"RDHDemoCell_Identifer";
+static NSString *const SECTION_HEADER_IDENTIFIER = @"RDHDemoSectionHeader_Identifier";
+
+static CGFloat const RDH_SECTION_DIMENSION = 44;
 
 @interface RDHDemoViewController ()
 
 @property (nonatomic, weak) RDHCollectionViewGridLayout *collectionViewLayout;
 
-@property (nonatomic, copy, readonly) NSDictionary *testData;
+@property (nonatomic, copy, readonly) NSArray *testData;
 
 @end
 
@@ -30,11 +34,13 @@ static NSString *const CELL_IDENTIFIER = @"RDHDemoCell_Identifer";
 {
     RDHCollectionViewGridLayout *layout = [RDHCollectionViewGridLayout new];
     layout.lineItemCount = RDH_RANDOM_DATA ? ((arc4random() % 5) + 1) : 3;
-    layout.lineSpacing = RDH_RANDOM_DATA ? (arc4random() % 16) : 0;
-    layout.itemSpacing = RDH_RANDOM_DATA ? (arc4random() % 16) : 0;
+    layout.lineSpacing = RDH_RANDOM_DATA ? (arc4random() % 16) : 10;
+    layout.itemSpacing = RDH_RANDOM_DATA ? (arc4random() % 16) : 10;
+    layout.sectionDimension = RDH_SECTION_DIMENSION;
     layout.lineDimension = 0;
     layout.scrollDirection = UICollectionViewScrollDirectionVertical;
     layout.sectionsStartOnNewLine = YES;
+    layout.floatingSectionHeaders = YES;
     return layout;
 }
 
@@ -45,17 +51,19 @@ static NSString *const CELL_IDENTIFIER = @"RDHDemoCell_Identifer";
         // Custom initialization
         
         NSUInteger sectionCount = RDH_RANDOM_DATA ? (arc4random() % 20) + 10 : 10;
-        NSMutableDictionary *testData = [NSMutableDictionary dictionaryWithCapacity:sectionCount];
+        NSMutableArray *testData = [NSMutableArray arrayWithCapacity:sectionCount];
         for (NSUInteger i=0; i<sectionCount; i++) {
-            testData[@(i)] = @(RDH_RANDOM_DATA ? (arc4random() % 16) : 10);
+            [testData addObject:@(RDH_RANDOM_DATA ? (arc4random() % 16) : 10)];
         }
         _testData = [testData copy];
         
-        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(didTapResetItem)];
+        UIBarButtonItem *resetItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(didTapResetItem)];
+        UIBarButtonItem *sectionHeaders = [[UIBarButtonItem alloc] initWithTitle:@"Headers" style:UIBarButtonItemStylePlain target:self action:@selector(didTapSectionHeadersItem)];
         
         UIBarButtonItem *changeScrollDirection = [[UIBarButtonItem alloc] initWithTitle:@"Scrolling" style:UIBarButtonItemStylePlain target:self action:@selector(didTapChangeScrollDirectionItem)];
         UIBarButtonItem *sectionsOnNewLine = [[UIBarButtonItem alloc] initWithTitle:@"New Line" style:UIBarButtonItemStylePlain target:self action:@selector(didTapChangeStartSectionOnNewLineItem)];
         
+        self.navigationItem.leftBarButtonItems = @[resetItem, sectionHeaders];
         self.navigationItem.rightBarButtonItems = @[changeScrollDirection, sectionsOnNewLine];
     }
     return self;
@@ -73,6 +81,7 @@ static NSString *const CELL_IDENTIFIER = @"RDHDemoCell_Identifer";
     
     self.collectionView.backgroundColor = [UIColor clearColor];
     [self.collectionView registerClass:[RDHDemoCell class] forCellWithReuseIdentifier:CELL_IDENTIFIER];
+    [self.collectionView registerClass:[RDHDemoSectionHeader class] forSupplementaryViewOfKind:RDHCollectionViewGridLayoutSectionHeaderKind withReuseIdentifier:SECTION_HEADER_IDENTIFIER];
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -103,7 +112,7 @@ static NSString *const CELL_IDENTIFIER = @"RDHDemoCell_Identifer";
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return [self.testData[@(section)] unsignedIntegerValue];
+    return [self.testData[section] unsignedIntegerValue];
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -113,6 +122,15 @@ static NSString *const CELL_IDENTIFIER = @"RDHDemoCell_Identifer";
     [cell setText:[NSString stringWithFormat:@"%d, %d", indexPath.section, indexPath.item]];
     
     return cell;
+}
+
+-(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+{
+    RDHDemoSectionHeader *header = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:SECTION_HEADER_IDENTIFIER forIndexPath:indexPath];
+    
+    [header setText:[NSString stringWithFormat:@"Section %d", indexPath.section]];
+     
+    return header;
 }
 
 #pragma mark - Nav item actions
@@ -136,12 +154,18 @@ static NSString *const CELL_IDENTIFIER = @"RDHDemoCell_Identifer";
             direction = UICollectionViewScrollDirectionHorizontal;
             break;
     }
+
     self.collectionViewLayout.scrollDirection = direction;
 }
 
 -(void)didTapChangeStartSectionOnNewLineItem
 {
     self.collectionViewLayout.sectionsStartOnNewLine = !self.collectionViewLayout.sectionsStartOnNewLine;
+}
+
+-(void)didTapSectionHeadersItem
+{
+    self.collectionViewLayout.sectionDimension = self.collectionViewLayout.sectionDimension == 0 ? RDH_SECTION_DIMENSION : 0;
 }
 
 @end

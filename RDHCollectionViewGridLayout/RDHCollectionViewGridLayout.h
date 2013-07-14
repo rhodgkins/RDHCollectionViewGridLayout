@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+extern NSString *const RDHCollectionViewGridLayoutSectionHeaderKind;
+
 @interface RDHCollectionViewGridLayout : UICollectionViewLayout
 
 /**
@@ -49,9 +51,25 @@
 
 /**
  * To force sections to start on a new line set this property to YES. Otherwise the section will follow on on from the previous one.
+ * Setting this property to NO will remove any section headers if the are being used.
  *
  * The default value of this property is NO.
  */
 @property (nonatomic, assign) BOOL sectionsStartOnNewLine;
+
+/**
+ * The size (in the same dimension as lineDimension) of the section supplementary views.
+ * When a vertical scrollDirection is set, this dimension is the height, when horizontal this is the width of the headers. However when the scrollDirection is horizontal, the headers are rotated by 90 degrees counter-clockwise. For example a label in the headers would be rotated to read from bottom to top
+ * This property is only useable when sectionsStartOnNewLine is YES, as the section header is placed above the items in that section and as when sectionsStartOnNewLine is NO, items from different sections can be on the same line so this would make no sense.
+ * The default value of this property is 0.
+ */
+@property (nonatomic, assign) CGFloat sectionDimension;
+
+/**
+ *
+ *
+ * The default value of this property is YES.
+ */
+@property (nonatomic, assign) BOOL floatingSectionHeaders;
 
 @end

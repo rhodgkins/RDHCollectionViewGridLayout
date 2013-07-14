@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		441E9AF9178982B200B5A70C /* RDHDemoSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 441E9AF8178982B200B5A70C /* RDHDemoSectionHeader.m */; };
+		441E9AFB1789E2B900B5A70C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441E9AFA1789E2B900B5A70C /* QuartzCore.framework */; };
 		442BF3F517896E1D003FAB93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 442BF3F417896E1D003FAB93 /* UIKit.framework */; };
 		442BF3F717896E1D003FAB93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 442BF3F617896E1D003FAB93 /* Foundation.framework */; };
 		442BF3F917896E1D003FAB93 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 442BF3F817896E1D003FAB93 /* CoreGraphics.framework */; };
@@ -22,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		441E9AF7178982B200B5A70C /* RDHDemoSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDHDemoSectionHeader.h; sourceTree = "<group>"; };
+		441E9AF8178982B200B5A70C /* RDHDemoSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDHDemoSectionHeader.m; sourceTree = "<group>"; };
+		441E9AFA1789E2B900B5A70C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		442BF3F117896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RDHCollectionViewGridLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		442BF3F417896E1D003FAB93 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		442BF3F617896E1D003FAB93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -48,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				441E9AFB1789E2B900B5A70C /* QuartzCore.framework in Frameworks */,
 				442BF3F517896E1D003FAB93 /* UIKit.framework in Frameworks */,
 				442BF3F717896E1D003FAB93 /* Foundation.framework in Frameworks */,
 				442BF3F917896E1D003FAB93 /* CoreGraphics.framework in Frameworks */,
@@ -80,6 +86,7 @@
 				442BF3F417896E1D003FAB93 /* UIKit.framework */,
 				442BF3F617896E1D003FAB93 /* Foundation.framework */,
 				442BF3F817896E1D003FAB93 /* CoreGraphics.framework */,
+				441E9AFA1789E2B900B5A70C /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -93,6 +100,8 @@
 				442BF41517896E84003FAB93 /* RDHDemoViewController.m */,
 				442BF41117896E5D003FAB93 /* RDHDemoCell.h */,
 				442BF41217896E5D003FAB93 /* RDHDemoCell.m */,
+				441E9AF7178982B200B5A70C /* RDHDemoSectionHeader.h */,
+				441E9AF8178982B200B5A70C /* RDHDemoSectionHeader.m */,
 				44603088178976580010D593 /* RDHCollectionViewGridLayout */,
 				442BF3FB17896E1D003FAB93 /* Supporting Files */,
 			);
@@ -194,6 +203,7 @@
 				442BF41617896E84003FAB93 /* RDHDemoViewController.m in Sources */,
 				442BF41317896E5D003FAB93 /* RDHDemoCell.m in Sources */,
 				4460308B178976580010D593 /* RDHCollectionViewGridLayout.m in Sources */,
+				441E9AF9178982B200B5A70C /* RDHDemoSectionHeader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
