@@ -1,3 +1,2 @@
-platform :ios
-pod 'RDHCollectionViewLayout'
-
+platform :ios, 6.0
+pod 'RDHCollectionViewGridLayout'

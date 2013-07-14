@@ -6,22 +6,20 @@
 //  Copyright (c) 2013 Rich H. All rights reserved.
 //
 
-/* 
- * If we're using the PSTCollectionView library then create a macro to swap out the classes. Any *CollectionView* libraries should use this ommiting the UI/PST prefix.
- * e.g.
- * UICollectionView -> __RDH_COLLECTION_VIEW_LIB(CollectionView)
- * UICollectionViewLayoutAttribute -> __RDH_COLLECTION_VIEW_LIB(CollectionViewLayoutAttribute)
- * This is not needed for enums as they are just typedefs.
- */
-#ifdef RDH_USING_PSTCOLLECTIONVIEW
-    #import <PSTCollectionView/PSTCollectionView.h>
-    #define __RDH_COLLECTION_VIEW_LIB(__CLASS__) PST##__CLASS__
-#else
-    #import <UIKit/UIKit.h>
-    #define __RDH_COLLECTION_VIEW_LIB(__CLASS__) UI##__CLASS__
-#endif
+/* Pick the correct implementation depending on the target */
+#ifndef RDH_USING_PSTCOLLECTIONVIEW
 
-@interface RDHCollectionViewGridLayout : __RDH_COLLECTION_VIEW_LIB(CollectionViewLayout)
+#import <UIKit/UIKit.h>
+
+@interface RDHCollectionViewGridLayout : UICollectionViewLayout
+
+#else
+
+#import <PSTCollectionView/PSTCollectionView.h>
+
+@interface RDHCollectionViewGridLayout : PSTCollectionViewLayout
+
+#endif
 
 /**
  * A vertical direction will constrain the layout by rows (lineItemCount per row), a horizontal direction by columns (lineItemCount per column).
@@ -68,5 +66,3 @@
 @property (nonatomic, assign) BOOL sectionsStartOnNewLine;
 
 @end
-
-#undef __RDH_COLLECTION_VIEW_LIB

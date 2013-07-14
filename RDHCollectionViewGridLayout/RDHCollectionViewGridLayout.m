@@ -11,6 +11,13 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 
+/*
+ * If we're using the PSTCollectionView library then create a macro to swap out the classes. Any *CollectionView* libraries should use this ommiting the UI/PST prefix.
+ * e.g.
+ * UICollectionView -> __RDH_COLLECTION_VIEW_LIB(CollectionView)
+ * UICollectionViewLayoutAttribute -> __RDH_COLLECTION_VIEW_LIB(CollectionViewLayoutAttribute)
+ * This is not needed for enums as they are just typedefs.
+ */
 #ifdef RDH_USING_PSTCOLLECTIONVIEW
     #define __RDH_COLLECTION_VIEW_LIB(__CLASS__) PST##__CLASS__
 #else
