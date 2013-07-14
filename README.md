@@ -7,6 +7,15 @@ If PSTCollectionView is being used, use the `RDHCollectionViewGridLayout/PST` po
 
 This layout provides simple options for customisation of a collection view as a grid layout.
 
+Documentation
+-------------
+
+[Online docs](http://cocoadocs.org/docsets/RDHCollectionViewGridLayout)
+
+[Docset for xcode](http://cocoadocs.org/docsets/RDHCollectionViewGridLayout/xcode-docset.atom)
+
+[Docset for Dash](dash-feed://http%3A%2F%2Fcocoadocs.org%2Fdocsets%2FRDHCollectionViewGridLayout%2FRDHCollectionViewGridLayout.xml)
+
 Properties
 ----------
 
