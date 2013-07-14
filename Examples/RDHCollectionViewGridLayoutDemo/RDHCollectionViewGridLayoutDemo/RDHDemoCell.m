@@ -8,7 +8,7 @@
 
 #import "RDHDemoCell.h"
 
-static CGFloat const RDH_CELL_PADDING = 5;
+static CGFloat const RDH_CELL_PADDING = 0;
 
 @interface RDHDemoCell ()
 
@@ -18,6 +18,11 @@ static CGFloat const RDH_CELL_PADDING = 5;
 
 @implementation RDHDemoCell
 
++(NSString *)reuseIdentifier
+{
+    return NSStringFromClass(self);
+}
+
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -25,21 +30,29 @@ static CGFloat const RDH_CELL_PADDING = 5;
         // Initialization code
         
         UILabel *label = [UILabel new];
+        label.translatesAutoresizingMaskIntoConstraints = NO;
+        label.backgroundColor = [UIColor clearColor];
+        label.font = [UIFont boldSystemFontOfSize:24];
         label.textAlignment = NSTextAlignmentCenter;
+        label.textColor = [UIColor whiteColor];
         [self.contentView addSubview:label];
         _label = label;
         
+        // Pin to superview edge with RDH_CELL_PADDING inset
+        [self pinView:label toContentViewAttribute:NSLayoutAttributeLeft withPadding:RDH_CELL_PADDING];
+        [self pinView:label toContentViewAttribute:NSLayoutAttributeTop withPadding:RDH_CELL_PADDING];
+        [self pinView:label toContentViewAttribute:NSLayoutAttributeRight withPadding:RDH_CELL_PADDING];
+        [self pinView:label toContentViewAttribute:NSLayoutAttributeBottom withPadding:RDH_CELL_PADDING];
+        
         self.backgroundView = [UIView new];
-        self.backgroundView.backgroundColor = [UIColor redColor];
+        self.backgroundView.backgroundColor = [[UIColor blueColor] colorWithAlphaComponent:0.2];
     }
     return self;
 }
 
--(void)layoutSubviews
+-(void)pinView:(UIView *)view toContentViewAttribute:(NSLayoutAttribute)attribute withPadding:(CGFloat)padding
 {
-    [super layoutSubviews];
-    
-    self.label.frame = CGRectInset(self.contentView.bounds, RDH_CELL_PADDING, RDH_CELL_PADDING);
+    [self.contentView addConstraint:[NSLayoutConstraint constraintWithItem:self.contentView attribute:attribute relatedBy:NSLayoutRelationEqual toItem:view attribute:attribute multiplier:1 constant:padding]];
 }
 
 -(void)setText:(NSString *)text

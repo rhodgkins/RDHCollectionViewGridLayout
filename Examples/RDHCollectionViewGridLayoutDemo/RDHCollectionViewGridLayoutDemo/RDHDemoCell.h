@@ -10,6 +10,8 @@
 
 @interface RDHDemoCell : UICollectionViewCell
 
++(NSString *)reuseIdentifier;
+
 -(void)setText:(NSString *)text;
 
 @end

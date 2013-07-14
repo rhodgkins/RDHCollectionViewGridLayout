@@ -12,9 +12,7 @@
 
 #import "RDHDemoCell.h"
 
-#define RDH_RANDOM_DATA 0
-
-static NSString *const CELL_IDENTIFIER = @"RDHDemoCell_Identifer";
+#define RDH_RANDOM_DATA 1
 
 @interface RDHDemoViewController ()
 
@@ -29,9 +27,9 @@ static NSString *const CELL_IDENTIFIER = @"RDHDemoCell_Identifer";
 +(RDHCollectionViewGridLayout *)newGridLayout
 {
     RDHCollectionViewGridLayout *layout = [RDHCollectionViewGridLayout new];
-    layout.lineItemCount = RDH_RANDOM_DATA ? ((arc4random() % 5) + 1) : 3;
-    layout.lineSpacing = RDH_RANDOM_DATA ? (arc4random() % 16) : 0;
-    layout.itemSpacing = RDH_RANDOM_DATA ? (arc4random() % 16) : 0;
+    layout.lineItemCount = RDH_RANDOM_DATA ? ((arc4random() % 5) + 1) : 4;
+    layout.lineSpacing = RDH_RANDOM_DATA ? (arc4random() % 16) : 5;
+    layout.itemSpacing = RDH_RANDOM_DATA ? (arc4random() % 16) : 10;
     layout.lineDimension = 0;
     layout.scrollDirection = UICollectionViewScrollDirectionVertical;
     layout.sectionsStartOnNewLine = YES;
@@ -71,8 +69,8 @@ static NSString *const CELL_IDENTIFIER = @"RDHDemoCell_Identifer";
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    self.collectionView.backgroundColor = [UIColor clearColor];
-    [self.collectionView registerClass:[RDHDemoCell class] forCellWithReuseIdentifier:CELL_IDENTIFIER];
+    self.collectionView.backgroundColor = [UIColor lightGrayColor];
+    [self.collectionView registerClass:[RDHDemoCell class] forCellWithReuseIdentifier:[RDHDemoCell reuseIdentifier]];
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -108,7 +106,7 @@ static NSString *const CELL_IDENTIFIER = @"RDHDemoCell_Identifer";
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    RDHDemoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CELL_IDENTIFIER forIndexPath:indexPath];
+    RDHDemoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[RDHDemoCell reuseIdentifier] forIndexPath:indexPath];
     
     [cell setText:[NSString stringWithFormat:@"%d, %d", indexPath.section, indexPath.item]];
     
