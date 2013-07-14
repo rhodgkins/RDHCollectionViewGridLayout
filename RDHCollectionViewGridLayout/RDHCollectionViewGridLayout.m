@@ -11,6 +11,12 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 
+#ifdef RDH_USING_PSTCOLLECTIONVIEW
+    #define __RDH_COLLECTION_VIEW_LIB(__CLASS__) PST##__CLASS__
+#else
+    #define __RDH_COLLECTION_VIEW_LIB(__CLASS__) UI##__CLASS__
+#endif
+
 @interface RDHCollectionViewGridLayout ()
 
 @property (nonatomic, copy) NSArray *firstLineFrames;
@@ -100,9 +106,9 @@
     return size;
 }
 
--(UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
+-(__RDH_COLLECTION_VIEW_LIB(CollectionViewLayoutAttributes) *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewLayoutAttributes *layoutAttrs = self.itemAttributes[indexPath];
+    __RDH_COLLECTION_VIEW_LIB(CollectionViewLayoutAttributes) *layoutAttrs = self.itemAttributes[indexPath];
     
     if (!layoutAttrs) {
         layoutAttrs = [self calculateLayoutAttributesForItemAtIndexPath:indexPath];
@@ -116,13 +122,7 @@
 {
     NSMutableArray *layoutAttributes = [NSMutableArray arrayWithCapacity:[self.itemAttributes count]];
     
-    [self.itemAttributes enumerateKeysAndObjectsUsingBlock:^(NSIndexPath *const indexPath, UICollectionViewLayoutAttributes *attr, BOOL *stop) {
-        
-        UICollectionViewLayoutAttributes *adjustedAttr = [attr copy];
-        
-        CGRect adjustedFrame = attr.frame;
-        
-        adjustedAttr.frame = adjustedFrame;
+    [self.itemAttributes enumerateKeysAndObjectsUsingBlock:^(NSIndexPath *const indexPath, __RDH_COLLECTION_VIEW_LIB(CollectionViewLayoutAttributes) *attr, BOOL *stop) {
         
         if (CGRectIntersectsRect(rect, attr.frame)) {
             [layoutAttributes addObject:attr];
@@ -269,9 +269,9 @@
     return size;
 }
 
--(UICollectionViewLayoutAttributes *)calculateLayoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
+-(__RDH_COLLECTION_VIEW_LIB(CollectionViewLayoutAttributes) *)calculateLayoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewLayoutAttributes *attrs = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
+    __RDH_COLLECTION_VIEW_LIB(CollectionViewLayoutAttributes) *attrs = [__RDH_COLLECTION_VIEW_LIB(CollectionViewLayoutAttributes) layoutAttributesForCellWithIndexPath:indexPath];
     
     CGRect frame;
     NSUInteger line;
@@ -402,3 +402,5 @@
 }
 
 @end
+
+#undef __RDH_COLLECTION_VIEW_LIB
