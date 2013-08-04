@@ -6,6 +6,10 @@ Grid layout for UICollectionView.
 If PSTCollectionView is being used, use the `RDHCollectionViewGridLayout/PST` pod.
 
 This layout provides simple options for customisation of a collection view as a grid layout.
+Supporting vertical and horizontal scrolling directions, the layout also takes care of left over pixels at the end of rows.
+For example, a `UICollectionView` for a size of 320x300 scrolling vertically with 6 columns would normally mean each cell would be 53.3333 points wide.
+This would mean the cells would be blurry due to it's frame sitting over non-integer pixel values.
+`RDHCollectionViewGridLayout` takes care of this, and distributes these dirty extra pixels over the columns. This means the first 2 columns would have a cell width of 54 points, while the rest have a size of 53 points.
 
 Documentation
 -------------
