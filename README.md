@@ -88,16 +88,16 @@ Examples
 
 The following example is with a `lineSpacing` of 5 and `itemSpacing` of 10. Each section starts on a new line (`sectionsStartOnNewLine` is `YES`).
 
-![Example image 1](/Examples/images/5-line, 10-item.png)
+![Example image 1](Examples/images/5-line, 10-item.png)
 
 
 This is the same as the above but the `sectionsStartOnNewLine` is `NO`.
 
-![Vertical scrolling](/Examples/images/vertical.png)
+![Vertical scrolling](Examples/images/vertical.png)
 
 
 Horizontal scrolling
 
-![Horizontal scrolling](/Examples/images/horizontal.png)
+![Horizontal scrolling](Examples/images/horizontal.png)
 
 
