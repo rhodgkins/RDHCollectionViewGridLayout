@@ -2,8 +2,16 @@ RDHCollectionViewGridLayout
 ===========================
 
 Grid layout for UICollectionView.
+``` ruby 
+pod 'RDHCollectionViewGridLayout'
+```
 
-If PSTCollectionView is being used, use the `RDHCollectionViewGridLayout/PST` pod.
+Also supports iOS 7. As of version 1.1.0 `PSTCollectionView` support is removed and only iOS 6.0+ will be supported going forwards.
+
+If `PSTCollectionView` is being used, use the `RDHCollectionViewGridLayout/PST` pod and a verison less than 1.1.0:
+``` ruby 
+pod 'RDHCollectionViewGridLayout/PST', '< 1.1'
+```
 
 This layout provides simple options for customisation of a collection view as a grid layout.
 Supporting vertical and horizontal scrolling directions, the layout also takes care of left over pixels at the end of rows.
@@ -48,8 +56,8 @@ Properties
 /**
  * Defines the maximum number of items allowed per line. Simply, for vertical layouts this is the number of columns, 
  and for horizontal layouts this is the number of rows. The layout accounts for adding the extra pixels to the first 
- X items on the line. Best case is that the useable width is exactly divisible by lineItemCount, worse case is that `
- (useable width) mod lineItemCount = (lineItemCount - 1)` and that the first `(lineItemCount - 1)` items are 1 pixel 
+ X items on the line. Best case is that the useable width is exactly divisible by lineItemCount, worse case is that 
+ (useable width) mod lineItemCount = (lineItemCount - 1) and that the first (lineItemCount - 1) items are 1 pixel 
  bigger.
  *
  * The default value of this property is 4.
@@ -80,7 +88,7 @@ Properties
  */
 @property (nonatomic, assign) BOOL sectionsStartOnNewLine;
 
-````
+```
 
 Examples
 --------
