@@ -1,0 +1,12 @@
+PODS:
+  - RDHCollectionViewGridLayout (1.0.0):
+    - RDHCollectionViewGridLayout/Core
+  - RDHCollectionViewGridLayout/Core (1.0.0)
+
+DEPENDENCIES:
+  - RDHCollectionViewGridLayout (< 1.1)
+
+SPEC CHECKSUMS:
+  RDHCollectionViewGridLayout: 3c5bff4b2fba20ed3c24c46fe89cb85a1e4d1ae8
+
+COCOAPODS: 0.29.0

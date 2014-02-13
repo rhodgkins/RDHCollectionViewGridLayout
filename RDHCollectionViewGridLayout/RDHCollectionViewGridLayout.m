@@ -11,19 +11,6 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 
-/*
- * If we're using the PSTCollectionView library then create a macro to swap out the classes. Any *CollectionView* libraries should use this ommiting the UI/PST prefix.
- * e.g.
- * UICollectionView -> __RDH_COLLECTION_VIEW_LIB(CollectionView)
- * UICollectionViewLayoutAttribute -> __RDH_COLLECTION_VIEW_LIB(CollectionViewLayoutAttribute)
- * This is not needed for enums as they are just typedefs.
- */
-#ifdef RDH_USING_PSTCOLLECTIONVIEW
-    #define __RDH_COLLECTION_VIEW_LIB(__CLASS__) PST##__CLASS__
-#else
-    #define __RDH_COLLECTION_VIEW_LIB(__CLASS__) UI##__CLASS__
-#endif
-
 @interface RDHCollectionViewGridLayout ()
 
 @property (nonatomic, copy) NSArray *firstLineFrames;
@@ -113,9 +100,9 @@
     return size;
 }
 
--(__RDH_COLLECTION_VIEW_LIB(CollectionViewLayoutAttributes) *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
+-(UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    __RDH_COLLECTION_VIEW_LIB(CollectionViewLayoutAttributes) *layoutAttrs = self.itemAttributes[indexPath];
+    UICollectionViewLayoutAttributes *layoutAttrs = self.itemAttributes[indexPath];
     
     if (!layoutAttrs) {
         layoutAttrs = [self calculateLayoutAttributesForItemAtIndexPath:indexPath];
@@ -129,7 +116,7 @@
 {
     NSMutableArray *layoutAttributes = [NSMutableArray arrayWithCapacity:[self.itemAttributes count]];
     
-    [self.itemAttributes enumerateKeysAndObjectsUsingBlock:^(NSIndexPath *const indexPath, __RDH_COLLECTION_VIEW_LIB(CollectionViewLayoutAttributes) *attr, BOOL *stop) {
+    [self.itemAttributes enumerateKeysAndObjectsUsingBlock:^(NSIndexPath *const indexPath, UICollectionViewLayoutAttributes *attr, BOOL *stop) {
         
         if (CGRectIntersectsRect(rect, attr.frame)) {
             [layoutAttributes addObject:attr];
@@ -276,9 +263,9 @@
     return size;
 }
 
--(__RDH_COLLECTION_VIEW_LIB(CollectionViewLayoutAttributes) *)calculateLayoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
+-(UICollectionViewLayoutAttributes *)calculateLayoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    __RDH_COLLECTION_VIEW_LIB(CollectionViewLayoutAttributes) *attrs = [__RDH_COLLECTION_VIEW_LIB(CollectionViewLayoutAttributes) layoutAttributesForCellWithIndexPath:indexPath];
+    UICollectionViewLayoutAttributes *attrs = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
     
     CGRect frame;
     NSUInteger line;
