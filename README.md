@@ -8,7 +8,7 @@ pod 'RDHCollectionViewGridLayout'
 
 Also supports iOS 7. As of version 1.1.0 `PSTCollectionView` support is removed and only iOS 6.0+ will be supported going forwards.
 
-If `PSTCollectionView` is being used, use the `RDHCollectionViewGridLayout/PST` pod and a verison less than 1.1.0:
+If `PSTCollectionView` is being used, use the `RDHCollectionViewGridLayout/PST` pod and a version less than 1.1.0:
 ``` ruby 
 pod 'RDHCollectionViewGridLayout/PST', '< 1.1'
 ```
