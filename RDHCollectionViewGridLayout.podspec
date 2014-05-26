@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.frameworks = 'UIKit', 'Foundation', 'CoreGraphics'
   s.requires_arc = true
 
-  s.platform = :ios, '6.0'
+  s.ios.deployment_target = '6.0'
   s.source_files = 'RDHCollectionViewGridLayout/'
 
 end
