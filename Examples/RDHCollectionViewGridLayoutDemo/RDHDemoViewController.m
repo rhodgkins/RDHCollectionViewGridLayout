@@ -16,15 +16,13 @@
 
 @interface RDHDemoViewController ()
 
-@property (nonatomic, weak, readwrite) RDHCollectionViewGridLayout *collectionViewLayout;
+@property (nonatomic, readonly) RDHCollectionViewGridLayout *collectionViewLayout;
 
 @property (nonatomic, copy, readonly) NSDictionary *testData;
 
 @end
 
 @implementation RDHDemoViewController
-
-@synthesize collectionViewLayout = _collectionViewLayout;
 
 +(RDHCollectionViewGridLayout *)newGridLayout
 {
@@ -59,11 +57,6 @@
         self.navigationItem.rightBarButtonItems = @[changeScrollDirection, sectionsOnNewLine];
     }
     return self;
-}
-
--(RDHCollectionViewGridLayout *)collectionViewLayout
-{
-    return (RDHCollectionViewGridLayout *) self.collectionView.collectionViewLayout;
 }
 
 - (void)viewDidLoad
