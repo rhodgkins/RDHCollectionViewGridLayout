@@ -41,6 +41,9 @@
 		442BF41517896E84003FAB93 /* RDHDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDHDemoViewController.m; sourceTree = "<group>"; };
 		44603089178976580010D593 /* RDHCollectionViewGridLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDHCollectionViewGridLayout.h; sourceTree = "<group>"; };
 		4460308A178976580010D593 /* RDHCollectionViewGridLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDHCollectionViewGridLayout.m; sourceTree = "<group>"; };
+		44981CD41954C8C800DC37E3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		44981CD51954C8C800DC37E3 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../../LICENSE; sourceTree = "<group>"; };
+		44981CD61954C8C800DC37E3 /* RDHCollectionViewGridLayout.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; name = RDHCollectionViewGridLayout.podspec; path = ../../RDHCollectionViewGridLayout.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,9 @@
 		442BF3E817896E1D003FAB93 = {
 			isa = PBXGroup;
 			children = (
+				44981CD41954C8C800DC37E3 /* README.md */,
+				44981CD51954C8C800DC37E3 /* LICENSE */,
+				44981CD61954C8C800DC37E3 /* RDHCollectionViewGridLayout.podspec */,
 				442BF3FA17896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo */,
 				442BF3F317896E1D003FAB93 /* Frameworks */,
 				442BF3F217896E1D003FAB93 /* Products */,
