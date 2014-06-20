@@ -47,6 +47,7 @@
 		4437B7D71954CB6F005CCBBC /* 5-line, 10-item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5-line, 10-item.png"; sourceTree = "<group>"; };
 		4437B7D81954CB6F005CCBBC /* horizontal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horizontal.png; sourceTree = "<group>"; };
 		4437B7D91954CB6F005CCBBC /* vertical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vertical.png; sourceTree = "<group>"; };
+		4437B7DA1954CB94005CCBBC /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 		442BF3E817896E1D003FAB93 = {
 			isa = PBXGroup;
 			children = (
+				4437B7DA1954CB94005CCBBC /* .travis.yml */,
 				4437B7CF1954CB54005CCBBC /* LICENSE */,
 				4437B7D01954CB54005CCBBC /* RDHCollectionViewGridLayout.podspec */,
 				4437B7D11954CB54005CCBBC /* README.md */,
