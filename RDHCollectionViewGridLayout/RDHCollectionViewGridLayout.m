@@ -11,8 +11,6 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 
-#define RDHCollectionViewGridLayoutAttributesClass ([[self class] layoutAttributesClass])
-
 @interface RDHCollectionViewGridLayout ()
 
 @property (nonatomic, copy) NSArray *firstLineFrames;
@@ -267,7 +265,7 @@
 
 -(UICollectionViewLayoutAttributes *)calculateLayoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewLayoutAttributes *attrs = [RDHCollectionViewGridLayoutAttributesClass layoutAttributesForCellWithIndexPath:indexPath];
+    UICollectionViewLayoutAttributes *attrs = [[[self class] layoutAttributesClass] layoutAttributesForCellWithIndexPath:indexPath];
     
     CGRect frame;
     NSUInteger line;
