@@ -23,11 +23,11 @@ Documentation
 -------------
 
 [Online docs](http://cocoadocs.org/docsets/RDHCollectionViewGridLayout)
-
+<!--
 [Add Docset to Dash](dash-feed://http%3A%2F%2Fcocoadocs.org%2Fdocsets%2FRDHCollectionViewGridLayout%2FRDHCollectionViewGridLayout.xml)
 
 [Add Docset with Docs For Xcode](docs-for-xcode://http%3A%2F%2Fcocoadocs.org%2Fdocsets%2FRDHCollectionViewGridLayout%2Fxcode-docset.atom)
-
+-->
 Properties
 ----------
 
