@@ -396,5 +396,3 @@
 }
 
 @end
-
-#undef __RDH_COLLECTION_VIEW_LIB

@@ -6,20 +6,9 @@
 //  Copyright (c) 2013 Rich H. All rights reserved.
 //
 
-/* Pick the correct implementation depending on the target */
-#ifndef RDH_USING_PSTCOLLECTIONVIEW
-
 #import <UIKit/UIKit.h>
 
 @interface RDHCollectionViewGridLayout : UICollectionViewLayout
-
-#else
-
-#import <PSTCollectionView/PSTCollectionView.h>
-
-@interface RDHCollectionViewGridLayout : PSTCollectionViewLayout
-
-#endif
 
 /**
  * A vertical direction will constrain the layout by rows (lineItemCount per row), a horizontal direction by columns (lineItemCount per column).
