@@ -8,9 +8,6 @@
 
 #import "RDHCollectionViewGridLayout.h"
 
-#import <Foundation/Foundation.h>
-#import <CoreGraphics/CoreGraphics.h>
-
 @interface RDHCollectionViewGridLayout ()
 
 @property (nonatomic, copy) NSArray *firstLineFrames;
