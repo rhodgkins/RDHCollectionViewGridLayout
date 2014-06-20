@@ -1,4 +1,4 @@
-RDHCollectionViewGridLayout <a href="http://badge.fury.io/co/RDHCollectionViewGridLayout"><img src="https://badge.fury.io/co/RDHCollectionViewGridLayout@2x.png" alt="Pod version" height="18"></a>
+RDHCollectionViewGridLayout
 ===========================
 
 Grid layout for UICollectionView.
