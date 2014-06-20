@@ -1,4 +1,4 @@
-RDHCollectionViewGridLayout
+RDHCollectionViewGridLayout [![Build Status](https://travis-ci.org/rhodgkins/RDHCollectionViewGridLayout.svg?branch=master)](https://travis-ci.org/rhodgkins/RDHCollectionViewGridLayout)
 ===========================
 
 Grid layout for UICollectionView.
