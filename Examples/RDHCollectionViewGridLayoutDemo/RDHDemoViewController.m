@@ -16,13 +16,15 @@
 
 @interface RDHDemoViewController ()
 
-@property (nonatomic, weak) RDHCollectionViewGridLayout *collectionViewLayout;
+@property (nonatomic, weak, readwrite) RDHCollectionViewGridLayout *collectionViewLayout;
 
 @property (nonatomic, copy, readonly) NSDictionary *testData;
 
 @end
 
 @implementation RDHDemoViewController
+
+@synthesize collectionViewLayout = _collectionViewLayout;
 
 +(RDHCollectionViewGridLayout *)newGridLayout
 {
@@ -83,9 +85,9 @@
 -(void)showInfo
 {
 #if RDH_RANDOM_DATA
-    NSMutableString *message = [NSMutableString stringWithFormat:@"Collection view: sections=%d\n", [self.collectionView numberOfSections]];
+    NSMutableString *message = [NSMutableString stringWithFormat:@"Collection view: sections=%ld\n", (long) [self.collectionView numberOfSections]];
     [message appendString:@"Layout:\n"];
-    [message appendFormat:@"lineItemCount=%d,\n", self.collectionViewLayout.lineItemCount];
+    [message appendFormat:@"lineItemCount=%lu,\n", (unsigned long) self.collectionViewLayout.lineItemCount];
     [message appendFormat:@"lineSpacing=%.2lf,\n", self.collectionViewLayout.lineSpacing];
     [message appendFormat:@"itemSpacing=%.2lf,\n", self.collectionViewLayout.itemSpacing];
     [message appendFormat:@"lineDimension=%.2lf\n", self.collectionViewLayout.lineDimension];
@@ -108,7 +110,7 @@
 {
     RDHDemoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[RDHDemoCell reuseIdentifier] forIndexPath:indexPath];
     
-    [cell setText:[NSString stringWithFormat:@"%d, %d", indexPath.section, indexPath.item]];
+    [cell setText:[NSString stringWithFormat:@"%ld, %ld", (long) indexPath.section, (long) indexPath.item]];
     
     return cell;
 }
