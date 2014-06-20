@@ -340,7 +340,7 @@
 
 -(void)setScrollDirection:(UICollectionViewScrollDirection)scrollDirection
 {
-    NSAssert(scrollDirection == UICollectionViewScrollDirectionHorizontal || scrollDirection == UICollectionViewScrollDirectionVertical, @"Invalid scrollDirection: %d", scrollDirection);
+    NSAssert(scrollDirection == UICollectionViewScrollDirectionHorizontal || scrollDirection == UICollectionViewScrollDirectionVertical, @"Invalid scrollDirection: %ld", (long) scrollDirection);
     
     if (_scrollDirection != scrollDirection) {
         _scrollDirection = scrollDirection;
