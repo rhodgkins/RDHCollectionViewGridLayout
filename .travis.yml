@@ -1,4 +1,4 @@
 language: objective-c
 xcode_project: Examples/RDHCollectionViewGridLayoutDemo.xcodeproj
 xcode_scheme: RDHCollectionViewGridLayoutDemo
-xcode_sdk: ios
+xcode_sdk: iphonesimulator
