@@ -1,0 +1,18 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreGraphics/CoreGraphics.h>
+#endif
+
+#define XCTAssertEqualRect(actual, expected, format...) \
+    if (!CGRectEqualToRect((actual), (expected))) { \
+        _XCTRegisterFailure([NSString stringWithFormat:@"((%@) equal to (%@)) failed: (\"%@\") is not equal to (\"%@\")", @#actual, @#expected, NSStringFromCGRect(actual), NSStringFromCGRect(expected)], format); \
+    }
+
+

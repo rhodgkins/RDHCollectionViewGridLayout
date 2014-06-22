@@ -17,7 +17,21 @@
 		442BF41617896E84003FAB93 /* RDHDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 442BF41517896E84003FAB93 /* RDHDemoViewController.m */; };
 		4437B7D51954CB5A005CCBBC /* RDHCollectionViewGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4437B7D41954CB5A005CCBBC /* RDHCollectionViewGridLayout.m */; };
 		4437B7DC1954CC83005CCBBC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4437B7DB1954CC83005CCBBC /* Images.xcassets */; };
+		4437B7FD1956DF0B005CCBBC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4437B7FC1956DF0B005CCBBC /* XCTest.framework */; };
+		4437B7FE1956DF0B005CCBBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 442BF3F617896E1D003FAB93 /* Foundation.framework */; };
+		4437B7FF1956DF0B005CCBBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 442BF3F417896E1D003FAB93 /* UIKit.framework */; };
+		4437B80F1956DF41005CCBBC /* RDHGridLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4437B80E1956DF41005CCBBC /* RDHGridLayoutTests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4437B8091956DF0B005CCBBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 442BF3E917896E1D003FAB93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 442BF3F017896E1D003FAB93;
+			remoteInfo = RDHCollectionViewGridLayoutDemo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		442BF3F117896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RDHCollectionViewGridLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +58,10 @@
 		4437B7D91954CB6F005CCBBC /* vertical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vertical.png; sourceTree = "<group>"; };
 		4437B7DA1954CB94005CCBBC /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
 		4437B7DB1954CC83005CCBBC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4437B7FB1956DF0B005CCBBC /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4437B7FC1956DF0B005CCBBC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4437B80E1956DF41005CCBBC /* RDHGridLayoutTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDHGridLayoutTests.m; sourceTree = "<group>"; };
+		4437B8101956DF56005CCBBC /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,16 @@
 				442BF3F517896E1D003FAB93 /* UIKit.framework in Frameworks */,
 				442BF3F717896E1D003FAB93 /* Foundation.framework in Frameworks */,
 				442BF3F917896E1D003FAB93 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4437B7F81956DF0B005CCBBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4437B7FD1956DF0B005CCBBC /* XCTest.framework in Frameworks */,
+				4437B7FF1956DF0B005CCBBC /* UIKit.framework in Frameworks */,
+				4437B7FE1956DF0B005CCBBC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +98,7 @@
 				4437B7D61954CB6F005CCBBC /* images */,
 				4437B7D21954CB5A005CCBBC /* RDHCollectionViewGridLayout */,
 				442BF3FA17896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo */,
+				4437B8001956DF0B005CCBBC /* Tests */,
 				442BF3F317896E1D003FAB93 /* Frameworks */,
 				442BF3F217896E1D003FAB93 /* Products */,
 			);
@@ -79,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				442BF3F117896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo.app */,
+				4437B7FB1956DF0B005CCBBC /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +119,7 @@
 				442BF3F417896E1D003FAB93 /* UIKit.framework */,
 				442BF3F617896E1D003FAB93 /* Foundation.framework */,
 				442BF3F817896E1D003FAB93 /* CoreGraphics.framework */,
+				4437B7FC1956DF0B005CCBBC /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -139,6 +170,23 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		4437B8001956DF0B005CCBBC /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4437B8011956DF0B005CCBBC /* Supporting Files */,
+				4437B80E1956DF41005CCBBC /* RDHGridLayoutTests.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		4437B8011956DF0B005CCBBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4437B8101956DF56005CCBBC /* Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,6 +207,24 @@
 			productReference = 442BF3F117896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4437B7FA1956DF0B005CCBBC /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4437B80D1956DF0B005CCBBC /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				4437B7F71956DF0B005CCBBC /* Sources */,
+				4437B7F81956DF0B005CCBBC /* Frameworks */,
+				4437B7F91956DF0B005CCBBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4437B80A1956DF0B005CCBBC /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 4437B7FB1956DF0B005CCBBC /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,6 +234,11 @@
 				CLASSPREFIX = RDH;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Rich H";
+				TargetAttributes = {
+					4437B7FA1956DF0B005CCBBC = {
+						TestTargetID = 442BF3F017896E1D003FAB93;
+					};
+				};
 			};
 			buildConfigurationList = 442BF3EC17896E1D003FAB93 /* Build configuration list for PBXProject "RDHCollectionViewGridLayoutDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -182,6 +253,7 @@
 			projectRoot = "";
 			targets = (
 				442BF3F017896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo */,
+				4437B7FA1956DF0B005CCBBC /* Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -193,6 +265,13 @@
 			files = (
 				442BF3FF17896E1D003FAB93 /* InfoPlist.strings in Resources */,
 				4437B7DC1954CC83005CCBBC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4437B7F91956DF0B005CCBBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +290,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4437B7F71956DF0B005CCBBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4437B80F1956DF41005CCBBC /* RDHGridLayoutTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4437B80A1956DF0B005CCBBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 442BF3F017896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo */;
+			targetProxy = 4437B8091956DF0B005CCBBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		442BF3FD17896E1D003FAB93 /* InfoPlist.strings */ = {
@@ -309,6 +404,65 @@
 			};
 			name = Release;
 		};
+		4437B80B1956DF0B005CCBBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RDHCollectionViewGridLayoutDemo.app/RDHCollectionViewGridLayoutDemo";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4437B80C1956DF0B005CCBBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RDHCollectionViewGridLayoutDemo.app/RDHCollectionViewGridLayoutDemo";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -329,6 +483,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		4437B80D1956DF0B005CCBBC /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4437B80B1956DF0B005CCBBC /* Debug */,
+				4437B80C1956DF0B005CCBBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
