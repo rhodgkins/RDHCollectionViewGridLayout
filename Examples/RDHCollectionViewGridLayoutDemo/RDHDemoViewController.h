@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#import "RDHCollectionViewGridLayout.h"
+
 @interface RDHDemoViewController : UICollectionViewController
+
+@property (nonatomic, readonly) RDHCollectionViewGridLayout *collectionViewLayout;
+
+-(void)reset;
 
 @end

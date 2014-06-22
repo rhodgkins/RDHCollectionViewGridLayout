@@ -8,15 +8,15 @@
 
 #import "RDHAppDelegate.h"
 
-#import "RDHDemoViewController.h"
-
 @implementation RDHAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    RDHDemoViewController *vc = [RDHDemoViewController new];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[RDHDemoViewController new]];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.demoViewController = vc;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

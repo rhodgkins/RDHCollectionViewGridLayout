@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#import "RDHDemoViewController.h"
+
 @interface RDHAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (nonatomic, weak) RDHDemoViewController *demoViewController;
 
 @end

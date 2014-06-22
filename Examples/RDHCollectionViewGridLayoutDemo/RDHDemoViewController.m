@@ -8,15 +8,11 @@
 
 #import "RDHDemoViewController.h"
 
-#import "RDHCollectionViewGridLayout.h"
-
 #import "RDHDemoCell.h"
 
 #define RDH_RANDOM_DATA 1
 
 @interface RDHDemoViewController ()
-
-@property (nonatomic, readonly) RDHCollectionViewGridLayout *collectionViewLayout;
 
 @property (nonatomic, copy, readonly) NSDictionary *testData;
 
@@ -75,6 +71,11 @@
     [self showInfo];
 }
 
+-(void)reset
+{
+    [self.collectionView setCollectionViewLayout:[[self class] newGridLayout] animated:YES];
+}
+
 -(void)showInfo
 {
 #if RDH_RANDOM_DATA
@@ -112,7 +113,7 @@
 
 -(void)didTapResetItem
 {
-    [self.collectionView setCollectionViewLayout:[[self class] newGridLayout] animated:YES];
+    [self reset];
     
     [self showInfo];
 }
