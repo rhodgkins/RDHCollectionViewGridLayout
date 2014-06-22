@@ -16,4 +16,6 @@
 
 -(void)reset;
 
+-(void)setLayout:(RDHCollectionViewGridLayout *)layout animated:(BOOL)animated;
+
 @end

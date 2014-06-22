@@ -73,7 +73,12 @@
 
 -(void)reset
 {
-    [self.collectionView setCollectionViewLayout:[[self class] newGridLayout] animated:YES];
+    [self setLayout:[[self class] newGridLayout] animated:YES];
+}
+
+-(void)setLayout:(RDHCollectionViewGridLayout *)layout animated:(BOOL)animated
+{
+    [self.collectionView setCollectionViewLayout:layout animated:animated];
 }
 
 -(void)showInfo
