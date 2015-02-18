@@ -139,7 +139,7 @@
 
 -(BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds
 {
-    return NO;
+    return !CGSizeEqualToSize(self.collectionView.bounds.size, newBounds.size);
 }
 
 #pragma mark - Lazily loaded properties
