@@ -18,7 +18,7 @@
  *
  * @warning A non-enum value will throw an exception.
  */
-@property (nonatomic, assign) UICollectionViewScrollDirection scrollDirection;
+@property (nonatomic, assign) IBInspectable UICollectionViewScrollDirection scrollDirection;
 
 /**
  * Defines the size of the unconstrained dimension of the items. Simply, for vertical layouts this is the height of the items, and for horizontal layouts this is the width of the items.
@@ -29,7 +29,7 @@
  *
  * @warning A negative value will throw an exception.
  */
-@property (nonatomic, assign) CGFloat lineDimension;
+@property (nonatomic, assign) IBInspectable CGFloat lineDimension;
 
 /**
  * Defines the maximum number of items allowed per line. Simply, for vertical layouts this is the number of columns, and for horizontal layouts this is the number of rows. The layout accounts for adding the extra pixels to the first X items on the line. Best case is that the useable width is exactly divisible by lineItemCount, worse case is that `(useable width) mod lineItemCount = (lineItemCount - 1)` and that the first `(lineItemCount - 1)` items are 1 pixel bigger.
@@ -38,27 +38,27 @@
  *
  * @warning A 0 value will throw an exception.
  */
-@property (nonatomic, assign) NSUInteger lineItemCount;
+@property (nonatomic, assign) IBInspectable NSUInteger lineItemCount;
 
 /**
  * Defines the spacing of items on the same line of the layout. Simply, for vertical layouts this is the column spacing, and for horizontal layouts this is the row spacing.
  *
  * The default value of this property is 0.
  */
-@property (nonatomic, assign) CGFloat itemSpacing;
+@property (nonatomic, assign) IBInspectable CGFloat itemSpacing;
 
 /**
  * Defines the line spacing of the layout. Simply, for vertical layouts this is the row spacing, and for horizontal layouts this is the column spacing.
  *
  * The default value of this property is 0.
  */
-@property (nonatomic, assign) CGFloat lineSpacing;
+@property (nonatomic, assign) IBInspectable CGFloat lineSpacing;
 
 /**
  * To force sections to start on a new line set this property to YES. Otherwise the section will follow on on from the previous one.
  *
  * The default value of this property is NO.
  */
-@property (nonatomic, assign) BOOL sectionsStartOnNewLine;
+@property (nonatomic, assign) IBInspectable BOOL sectionsStartOnNewLine;
 
 @end

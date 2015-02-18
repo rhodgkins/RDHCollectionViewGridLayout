@@ -393,3 +393,23 @@
 }
 
 @end
+
+@interface RDHCollectionViewGridLayout (InspectableScrolling)
+
+@property (nonatomic, assign) IBInspectable BOOL verticalScrolling;
+
+@end
+
+@implementation RDHCollectionViewGridLayout (InspectableScrolling)
+
+-(BOOL)verticalScrolling
+{
+    return self.scrollDirection == UICollectionViewScrollDirectionVertical;
+}
+
+-(void)setVerticalScrolling:(BOOL)verticalScrolling
+{
+    self.scrollDirection = verticalScrolling ? UICollectionViewScrollDirectionVertical : UICollectionViewScrollDirectionHorizontal;
+}
+
+@end
