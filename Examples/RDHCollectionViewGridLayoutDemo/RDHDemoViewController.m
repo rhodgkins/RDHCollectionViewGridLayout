@@ -20,6 +20,8 @@
 
 @implementation RDHDemoViewController
 
+@dynamic collectionViewLayout;
+
 +(RDHCollectionViewGridLayout *)newGridLayout
 {
     RDHCollectionViewGridLayout *layout = [RDHCollectionViewGridLayout new];
