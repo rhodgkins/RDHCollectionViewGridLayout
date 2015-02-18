@@ -35,11 +35,25 @@
         _lineSpacing = 0;
         _sectionsStartOnNewLine = NO;
         
-        _firstLineFrames = nil;
-        _itemAttributes = [NSMutableDictionary dictionary];
-        _numberOfLines = 0;
+        [self commonInit];
     }
     return self;
+}
+
+-(instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self commonInit];
+    }
+    return self;
+}
+
+-(void)commonInit
+{
+    _firstLineFrames = nil;
+    _itemAttributes = [NSMutableDictionary dictionary];
+    _numberOfLines = 0;
 }
 
 -(void)invalidateLayout
