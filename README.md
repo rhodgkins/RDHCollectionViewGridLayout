@@ -1,6 +1,8 @@
 RDHCollectionViewGridLayout [![Build Status](https://travis-ci.org/rhodgkins/RDHCollectionViewGridLayout.svg?branch=master)](https://travis-ci.org/rhodgkins/RDHCollectionViewGridLayout)
 ===========================
 
+Tests work on iOS 8.1 (under both Xcode 6.1, 6.2 and 6.3), but if you find any issues please [report](https://github.com/rhodgkins/RDHCollectionViewGridLayout/issues) them!
+
 Grid layout for UICollectionView.
 ``` ruby 
 pod 'RDHCollectionViewGridLayout'
