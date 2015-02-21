@@ -5,7 +5,7 @@ RDHCollectionViewGridLayout
 [![Pod Platform](http://img.shields.io/cocoapods/p/RDHCollectionViewGridLayout.svg)](http://cocoadocs.org/docsets/RDHCollectionViewGridLayout/)
 [![Pod License](http://img.shields.io/cocoapods/l/RDHCollectionViewGridLayout.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 [![Dependency Status](https://www.versioneye.com/objective-c/rdhcollectionviewgridlayout/1.2.0/badge.svg)](https://www.versioneye.com/objective-c/rdhcollectionviewgridlayout/1.2.0)
-[![Reference Status](https://www.versioneye.com/objective-c/RDHCollectionViewGridLayout/reference_badge.svg)](https://www.versioneye.com/objective-c/RDHCollectionViewGridLayout/references)
+[![Reference Status](https://www.versioneye.com/objective-c/rdhcollectionviewgridlayout/reference_badge.svg)](https://www.versioneye.com/objective-c/rdhcollectionviewgridlayout/references)
 
 Works and tested on iOS 6.0 to 8.3 (under both Xcode 6.1, 6.2 and 6.3), but if you find any issues please [report](https://github.com/rhodgkins/RDHCollectionViewGridLayout/issues) them!
 
