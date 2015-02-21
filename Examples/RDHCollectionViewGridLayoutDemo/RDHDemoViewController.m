@@ -8,15 +8,19 @@
 
 #import "RDHDemoViewController.h"
 
+#import "RDHCollectionViewGridLayout.h"
+
 #import "RDHDemoCell.h"
 
 #define RDH_RANDOM_DATA 1
 
+#define FIXED_LAYOUT 1
+
 @interface RDHDemoViewController ()
 
-@property (nonatomic, copy, readonly) NSDictionary *testData;
-
 @property (nonatomic, readonly) RDHCollectionViewGridLayout *currentCollectionViewLayout;
+
+@property (nonatomic, copy, readonly) NSDictionary *testData;
 
 @end
 
@@ -47,6 +51,18 @@
     }
     layout.scrollDirection = UICollectionViewScrollDirectionVertical;
     layout.sectionsStartOnNewLine = YES;
+    
+#if FIXED_LAYOUT
+    
+    layout.itemSpacing = 0;
+    layout.lineSpacing = 0;
+    layout.lineSize = 120;
+    layout.lineItemCount = 2;
+    layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    layout.sectionsStartOnNewLine = YES;
+    
+#endif
+    
     return layout;
 }
 
@@ -55,9 +71,7 @@
     self = [self initWithCollectionViewLayout:[[self class] newGridLayout]];
     if (self) {
         // Custom initialization
-        
-        _currentCollectionViewLayout = (RDHCollectionViewGridLayout *) self.collectionViewLayout;
-        
+                
         NSUInteger sectionCount = RDH_RANDOM_DATA ? (arc4random() % 20) + 10 : 10;
         NSMutableDictionary *testData = [NSMutableDictionary dictionaryWithCapacity:sectionCount];
         for (NSUInteger i=0; i<sectionCount; i++) {
@@ -96,9 +110,13 @@
     [self setLayout:[[self class] newGridLayout] animated:YES];
 }
 
+-(RDHCollectionViewGridLayout *)currentCollectionViewLayout
+{
+    return (RDHCollectionViewGridLayout *) self.collectionView.collectionViewLayout;
+}
+
 -(void)setLayout:(RDHCollectionViewGridLayout *)layout animated:(BOOL)animated
 {
-    _currentCollectionViewLayout = layout;
     [self.collectionView setCollectionViewLayout:layout animated:animated];
 }
 
@@ -128,30 +146,47 @@
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
+#if FIXED_LAYOUT
+    return 3;
+#else
     return [self.testData count];
+#endif
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
+#if FIXED_LAYOUT
+    return 3;
+#else
     return [self.testData[@(section)] unsignedIntegerValue];
+#endif
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     RDHDemoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[RDHDemoCell reuseIdentifier] forIndexPath:indexPath];
     
-    [cell setText:[NSString stringWithFormat:@"%ld, %ld", (long) indexPath.section, (long) indexPath.item]];
-    
     return cell;
+}
+
+-(void)collectionView:(UICollectionView *)collectionView willDisplayCell:(RDHDemoCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    NSString *frame = [NSString stringWithFormat:@"(%.1lf, %.1lf)\n(%.1lf, %.1lf)", cell.frame.origin.x, cell.frame.origin.y, cell.frame.size.width, cell.frame.size.height];
+    [cell setText:[NSString stringWithFormat:@"%ld, %ld\n%@", (long) indexPath.section, (long) indexPath.item, frame]];
 }
 
 #pragma mark - Nav item actions
 
 -(void)didTapResetItem
 {
+#if FIXED_LAYOUT
+    [self.collectionView reloadData];
+#else
     [self reset];
     
     [self showInfo];
+#endif
 }
 
 -(void)didTapChangeScrollDirectionItem

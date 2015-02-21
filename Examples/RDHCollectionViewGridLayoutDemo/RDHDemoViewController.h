@@ -8,12 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#import "RDHCollectionViewGridLayout.h"
-
 @interface RDHDemoViewController : UICollectionViewController
-
--(void)reset;
-
--(void)setLayout:(RDHCollectionViewGridLayout *)layout animated:(BOOL)animated;
 
 @end

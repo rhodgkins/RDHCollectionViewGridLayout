@@ -8,6 +8,8 @@
 
 #import "RDHAppDelegate.h"
 
+#import "RDHDemoViewController.h"
+
 @implementation RDHAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

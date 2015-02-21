@@ -32,9 +32,10 @@ static CGFloat const RDH_CELL_PADDING = 0;
         UILabel *label = [UILabel new];
         label.translatesAutoresizingMaskIntoConstraints = NO;
         label.backgroundColor = [UIColor clearColor];
-        label.font = [UIFont boldSystemFontOfSize:24];
+        label.font = [UIFont boldSystemFontOfSize:14];
         label.textAlignment = NSTextAlignmentCenter;
         label.textColor = [UIColor whiteColor];
+        label.numberOfLines = 3;
         [self.contentView addSubview:label];
         _label = label;
         
