@@ -2,7 +2,3 @@ language: objective-c
 xcode_project: Examples/RDHCollectionViewGridLayoutDemo.xcodeproj
 xcode_scheme: RDHCollectionViewGridLayoutDemo
 xcode_sdk: iphonesimulator
-
-before_install:
-- brew update
-- brew upgrade xctool

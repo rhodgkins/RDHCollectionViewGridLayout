@@ -3,7 +3,7 @@ RDHCollectionViewGridLayout
 [![Pod Version](http://img.shields.io/cocoapods/v/RDHCollectionViewGridLayout.svg)](http://cocoadocs.org/docsets/RDHCollectionViewGridLayout/)
 [![Pod Platform](http://img.shields.io/cocoapods/p/RDHCollectionViewGridLayout.svg)](http://cocoadocs.org/docsets/RDHCollectionViewGridLayout/)
 [![Pod License](http://img.shields.io/cocoapods/l/RDHCollectionViewGridLayout.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
-[![Dependency Status](https://www.versioneye.com/objective-c/rdhcollectionviewgridlayout/1.1.3/badge.svg)](https://www.versioneye.com/objective-c/rdhcollectionviewgridlayout/1.1.3)
+[![Dependency Status](https://www.versioneye.com/objective-c/rdhcollectionviewgridlayout/1.2.0/badge.svg)](https://www.versioneye.com/objective-c/rdhcollectionviewgridlayout/1.2.0)
 [![Reference Status](https://www.versioneye.com/objective-c/RDHCollectionViewGridLayout/reference_badge.svg)](https://www.versioneye.com/objective-c/RDHCollectionViewGridLayout/references)
 ===========================
 
@@ -11,7 +11,7 @@ Tests work on iOS 8.1 (under both Xcode 6.1, 6.2 and 6.3), but if you find any i
 
 Grid layout for UICollectionView.
 ``` ruby 
-pod 'RDHCollectionViewGridLayout'
+pod 'RDHCollectionViewGridLayout', '~> 1.2.0'
 ```
 
 Also supports iOS 7. As of version 1.1.0 `PSTCollectionView` support is removed and only iOS 6.0+ will be supported going forwards.

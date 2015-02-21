@@ -491,6 +491,7 @@
 				4437B80C1956DF0B005CCBBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
