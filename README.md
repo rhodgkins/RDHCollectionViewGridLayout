@@ -7,18 +7,11 @@ RDHCollectionViewGridLayout
 [![Dependency Status](https://www.versioneye.com/objective-c/rdhcollectionviewgridlayout/1.2.0/badge.svg)](https://www.versioneye.com/objective-c/rdhcollectionviewgridlayout/1.2.0)
 [![Reference Status](https://www.versioneye.com/objective-c/RDHCollectionViewGridLayout/reference_badge.svg)](https://www.versioneye.com/objective-c/RDHCollectionViewGridLayout/references)
 
-Tests work on iOS 8.1 (under both Xcode 6.1, 6.2 and 6.3), but if you find any issues please [report](https://github.com/rhodgkins/RDHCollectionViewGridLayout/issues) them!
+Works and tested on iOS 6.0 to 8.3 (under both Xcode 6.1, 6.2 and 6.3), but if you find any issues please [report](https://github.com/rhodgkins/RDHCollectionViewGridLayout/issues) them!
 
 Grid layout for UICollectionView.
 ``` ruby 
 pod 'RDHCollectionViewGridLayout', '~> 1.2.0'
-```
-
-Also supports iOS 7. As of version 1.1.0 `PSTCollectionView` support is removed and only iOS 6.0+ will be supported going forwards.
-
-If `PSTCollectionView` is being used, use the `RDHCollectionViewGridLayout/PST` pod and a version less than 1.1.0:
-``` ruby 
-pod 'RDHCollectionViewGridLayout/PST', '< 1.1'
 ```
 
 This layout provides simple options for customisation of a collection view as a grid layout.
@@ -26,6 +19,17 @@ Supporting vertical and horizontal scrolling directions, the layout also takes c
 For example, a `UICollectionView` for a size of 320x300 scrolling vertically with 6 columns would normally mean each cell would be 53.3333 points wide.
 This would mean the cells would be blurry due to it's frame sitting over non-integer pixel values.
 `RDHCollectionViewGridLayout` takes care of this, and distributes these dirty extra pixels over the columns. This means the first 2 columns would have a cell width of 54 points, while the rest have a size of 53 points.
+
+PSTCollectionView
+-----------------
+
+From version 1.1.0 `PSTCollectionView` support is removed.
+
+If `PSTCollectionView` is being used, use the `RDHCollectionViewGridLayout/PST` pod and a version less than 1.1.0:
+``` ruby 
+pod 'RDHCollectionViewGridLayout/PST', '< 1.1'
+```
+
 
 Documentation
 -------------
