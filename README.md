@@ -3,7 +3,7 @@ RDHCollectionViewGridLayout
 [![Build Status](https://travis-ci.org/rhodgkins/RDHCollectionViewGridLayout.svg?branch=master)](https://travis-ci.org/rhodgkins/RDHCollectionViewGridLayout)
 [![Pod Version](http://img.shields.io/cocoapods/v/RDHCollectionViewGridLayout.svg)](http://cocoadocs.org/docsets/RDHCollectionViewGridLayout/)
 [![Pod Platform](http://img.shields.io/cocoapods/p/RDHCollectionViewGridLayout.svg)](http://cocoadocs.org/docsets/RDHCollectionViewGridLayout/)
-[![Pod License](http://img.shields.io/cocoapods/l/RDHCollectionViewGridLayout.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
+[![Pod License](http://img.shields.io/cocoapods/l/RDHCollectionViewGridLayout.svg)](http://opensource.org/licenses/MIT)
 [![Dependency Status](https://www.versioneye.com/objective-c/rdhcollectionviewgridlayout/1.2.0/badge.svg)](https://www.versioneye.com/objective-c/rdhcollectionviewgridlayout/1.2.0)
 [![Reference Status](https://www.versioneye.com/objective-c/rdhcollectionviewgridlayout/reference_badge.svg)](https://www.versioneye.com/objective-c/rdhcollectionviewgridlayout/references)
 
