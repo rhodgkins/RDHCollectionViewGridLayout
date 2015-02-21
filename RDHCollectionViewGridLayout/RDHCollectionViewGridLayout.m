@@ -440,7 +440,7 @@ static CGFloat const RDHLineExtensionDefault = 0;
 
 -(void)setLineMultiplier:(CGFloat)lineMultiplier
 {
-    NSAssert(lineMultiplier >= 0, @"Negative lineMultiplier is meaningless");
+    NSAssert(lineMultiplier > 0, @"None positive lineMultiplier is meaningless");
     
     // Reset other line dimensions
     _lineSize = RDHLineSizeDefault;

@@ -46,7 +46,7 @@
  * @see lineSize
  * @see lineExtension
  *
- * @warning A negative value will throw an exception.
+ * @warning A none positive value will throw an exception.
  */
 @property (nonatomic, assign) IBInspectable CGFloat lineMultiplier;
 
