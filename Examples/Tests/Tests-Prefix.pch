@@ -10,6 +10,10 @@
     #import <CoreGraphics/CoreGraphics.h>
 #endif
 
+#define CGRectObject(x, y, width, height) [NSValue valueWithCGRect:CGRectMake(x, y, width, height)]
+
+#define IPF(section, item, x, y, width, height) [NSIndexPath indexPathForItem:item inSection:section] : CGRectObject(x, y, width, height)
+
 #define XCTAssertEqualRect(expression1, expression2, ...) \
     _XCTAssertEqualRect(self, expression1, @#expression1, expression2, @#expression2, __VA_ARGS__)
 
