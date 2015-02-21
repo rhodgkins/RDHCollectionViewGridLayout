@@ -12,8 +12,6 @@
 
 @interface RDHDemoViewController : UICollectionViewController
 
-@property (nonatomic, readonly) RDHCollectionViewGridLayout *collectionViewLayout;
-
 -(void)reset;
 
 -(void)setLayout:(RDHCollectionViewGridLayout *)layout animated:(BOOL)animated;
