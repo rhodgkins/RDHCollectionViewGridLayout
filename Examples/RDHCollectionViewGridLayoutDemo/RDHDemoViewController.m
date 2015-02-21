@@ -14,7 +14,7 @@
 
 #define RDH_RANDOM_DATA 1
 
-#define FIXED_LAYOUT 1
+#define FIXED_LAYOUT 0
 
 @interface RDHDemoViewController ()
 
@@ -56,10 +56,10 @@
     
     layout.itemSpacing = 0;
     layout.lineSpacing = 0;
-    layout.lineSize = 120;
-    layout.lineItemCount = 2;
-    layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    layout.sectionsStartOnNewLine = YES;
+    layout.lineSize = 0;
+    layout.lineItemCount = 3;
+    layout.scrollDirection = UICollectionViewScrollDirectionVertical;
+    layout.sectionsStartOnNewLine = NO;
     
 #endif
     
