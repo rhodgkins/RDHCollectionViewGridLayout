@@ -21,6 +21,9 @@
 		4437B7FE1956DF0B005CCBBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 442BF3F617896E1D003FAB93 /* Foundation.framework */; };
 		4437B7FF1956DF0B005CCBBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 442BF3F417896E1D003FAB93 /* UIKit.framework */; };
 		4437B80F1956DF41005CCBBC /* RDHGridLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4437B80E1956DF41005CCBBC /* RDHGridLayoutTests.m */; };
+		444926661AB6C17A002DBB57 /* RDHStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444926651AB6C17A002DBB57 /* RDHStoryboardTests.swift */; };
+		4449266A1AB6C24D002DBB57 /* TestDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444926691AB6C24D002DBB57 /* TestDataSource.swift */; };
+		4449266C1AB6C94C002DBB57 /* TestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4449266B1AB6C94C002DBB57 /* TestStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,10 @@
 		4437B7FC1956DF0B005CCBBC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4437B80E1956DF41005CCBBC /* RDHGridLayoutTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDHGridLayoutTests.m; sourceTree = "<group>"; };
 		4437B8101956DF56005CCBBC /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		444926641AB6C179002DBB57 /* Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Bridging-Header.h"; sourceTree = "<group>"; };
+		444926651AB6C17A002DBB57 /* RDHStoryboardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDHStoryboardTests.swift; sourceTree = "<group>"; };
+		444926691AB6C24D002DBB57 /* TestDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDataSource.swift; sourceTree = "<group>"; };
+		4449266B1AB6C94C002DBB57 /* TestStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,8 +180,12 @@
 		4437B8001956DF0B005CCBBC /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				4449266B1AB6C94C002DBB57 /* TestStoryboard.storyboard */,
+				444926691AB6C24D002DBB57 /* TestDataSource.swift */,
 				4437B8011956DF0B005CCBBC /* Supporting Files */,
 				4437B80E1956DF41005CCBBC /* RDHGridLayoutTests.m */,
+				444926651AB6C17A002DBB57 /* RDHStoryboardTests.swift */,
+				444926641AB6C179002DBB57 /* Tests-Bridging-Header.h */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -272,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4449266C1AB6C94C002DBB57 /* TestStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +307,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4437B80F1956DF41005CCBBC /* RDHGridLayoutTests.m in Sources */,
+				444926661AB6C17A002DBB57 /* RDHStoryboardTests.swift in Sources */,
+				4449266A1AB6C24D002DBB57 /* TestDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +347,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -365,6 +380,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
+				DEFINES_MODULE = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -429,7 +445,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tests/Tests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -457,7 +476,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tests/Tests-Bridging-Header.h";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};

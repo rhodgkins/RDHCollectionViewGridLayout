@@ -10,17 +10,13 @@
 
 #import "RDHCollectionViewGridLayout.h"
 
-static NSString *const CellID = @"CellID";
-
-@interface RDHTestDataSource : NSObject<UICollectionViewDataSource>
-
-@end
+#import "Tests-Swift.h"
 
 @interface RDHGridLayoutTests : XCTestCase
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) RDHCollectionViewGridLayout *layout;
-@property (nonatomic, strong) RDHTestDataSource *dataSource;
+@property (nonatomic, strong) TestDataSource *dataSource;
 @property (nonatomic, strong) UIWindow *window;
 
 @end
@@ -30,9 +26,8 @@ static NSString *const CellID = @"CellID";
 -(void)setUp
 {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
     
-    self.dataSource = [RDHTestDataSource new];
+    self.dataSource = [TestDataSource new];
     
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, 640, 640)];
     [self.window makeKeyAndVisible];
@@ -41,7 +36,7 @@ static NSString *const CellID = @"CellID";
     controller.edgesForExtendedLayout = UIRectEdgeNone;
     controller.automaticallyAdjustsScrollViewInsets = NO;
     self.collectionView = controller.collectionView;
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:CellID];
+    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:[TestDataSource CellID]];
     self.collectionView.dataSource = self.dataSource;
     self.collectionView.delegate = nil;
     self.window.rootViewController = controller;
@@ -570,23 +565,3 @@ static NSString *const CellID = @"CellID";
 
 @end
 
-@implementation RDHTestDataSource
-
--(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
-{
-    return 3;
-}
-
--(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-{
-    return 3;
-}
-
--(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellID forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor redColor];
-    return cell;
-}
-
-@end
