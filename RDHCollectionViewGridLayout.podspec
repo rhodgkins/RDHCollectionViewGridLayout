@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     s.docset_url = "http://cocoadocs.org/docsets/RDHCollectionViewGridLayout/xcode-docset.atom"
     s.social_media_url = 'https://twitter.com/rhodgkins'
 
-    s.frameworks = 'UIKit', 'CoreGraphics'
+    s.frameworks = 'Foundation', 'UIKit', 'CoreGraphics'
     s.requires_arc = true
     
     s.ios.deployment_target = '6.0'
