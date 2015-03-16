@@ -41,17 +41,6 @@ static CGFloat const RDHLineExtensionDefault = 0;
 {
     self = [super init];
     if (self) {
-        // Default properties
-        _scrollDirection = UICollectionViewScrollDirectionVertical;
-        _lineDimensionType = RDHLineDimensionTypeDefault;
-        _lineSize = RDHLineSizeDefault;
-        _lineMultiplier = RDHLineMutliplierDefault;
-        _lineExtension = RDHLineExtensionDefault;
-        _lineItemCount = 4;
-        _itemSpacing = 0;
-        _lineSpacing = 0;
-        _sectionsStartOnNewLine = NO;
-        
         [self commonInit];
     }
     return self;
@@ -68,9 +57,25 @@ static CGFloat const RDHLineExtensionDefault = 0;
 
 -(void)commonInit
 {
+    [self setInitialDefaults];
+    
     _firstLineFrames = nil;
     _itemAttributes = [NSMutableDictionary dictionary];
     _numberOfLines = 0;
+}
+
+-(void)setInitialDefaults
+{
+    // Default properties
+    _scrollDirection = UICollectionViewScrollDirectionVertical;
+    _lineDimensionType = RDHLineDimensionTypeDefault;
+    _lineSize = RDHLineSizeDefault;
+    _lineMultiplier = RDHLineMutliplierDefault;
+    _lineExtension = RDHLineExtensionDefault;
+    _lineItemCount = 4;
+    _itemSpacing = 0;
+    _lineSpacing = 0;
+    _sectionsStartOnNewLine = NO;
 }
 
 -(void)invalidateLayout
