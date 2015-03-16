@@ -11,7 +11,7 @@ Works and tested on iOS 6.0 to 8.3 (under both Xcode 6.1, 6.2 and 6.3), but if y
 
 Grid layout for UICollectionView.
 ``` ruby 
-pod 'RDHCollectionViewGridLayout', '~> 1.2.0'
+pod 'RDHCollectionViewGridLayout', '~> 1.2'
 ```
 
 This layout provides simple options for customisation of a collection view as a grid layout.
