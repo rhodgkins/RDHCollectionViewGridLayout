@@ -20,7 +20,7 @@
 
 @property (nonatomic, readonly) RDHCollectionViewGridLayout *currentCollectionViewLayout;
 
-@property (nonatomic, copy, readonly) NSDictionary *testData;
+@property (nonatomic, copy, readonly) NSDictionary<NSNumber *, NSNumber *> *testData;
 
 @end
 

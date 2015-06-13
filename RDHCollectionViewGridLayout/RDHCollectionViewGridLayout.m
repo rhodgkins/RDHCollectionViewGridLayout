@@ -22,8 +22,8 @@ static CGFloat const RDHLineExtensionDefault = 0;
 
 @interface RDHCollectionViewGridLayout ()
 
-@property (nonatomic, copy) NSArray *firstLineFrames;
-@property (nonatomic, copy, readonly) NSMutableDictionary *itemAttributes;
+@property (nonatomic, copy, nullable) NSArray<NSValue *> * firstLineFrames;
+@property (nonatomic, copy, nonnull, readonly) NSMutableDictionary<NSIndexPath *, __kindof UICollectionViewLayoutAttributes *> * itemAttributes;
 
 /// This property is used to store the lineDimension when it is set to 0 (depends on the average item size) and the base item size.
 @property (nonatomic, assign) CGSize calculatedItemSize;
@@ -46,7 +46,7 @@ static CGFloat const RDHLineExtensionDefault = 0;
     return self;
 }
 
--(instancetype)initWithCoder:(NSCoder *)aDecoder
+-(instancetype)initWithCoder:(nonnull NSCoder *)aDecoder
 {
     self = [super initWithCoder:aDecoder];
     if (self) {
@@ -133,7 +133,7 @@ static CGFloat const RDHLineExtensionDefault = 0;
     return size;
 }
 
--(UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
+-(nullable UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
     UICollectionViewLayoutAttributes *layoutAttrs = self.itemAttributes[indexPath];
     
@@ -145,9 +145,9 @@ static CGFloat const RDHLineExtensionDefault = 0;
     return layoutAttrs;
 }
 
--(NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
+-(NSArray<__kindof UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect
 {
-    NSMutableArray *layoutAttributes = [NSMutableArray arrayWithCapacity:[self.itemAttributes count]];
+    NSMutableArray<__kindof UICollectionViewLayoutAttributes *> *layoutAttributes = [NSMutableArray arrayWithCapacity:[self.itemAttributes count]];
     
     [self.itemAttributes enumerateKeysAndObjectsUsingBlock:^(NSIndexPath *const indexPath, UICollectionViewLayoutAttributes *attr, BOOL *stop) {
         
@@ -167,7 +167,7 @@ static CGFloat const RDHLineExtensionDefault = 0;
 #pragma mark - Lazily loaded properties
 
 /// Precalculate the frames for the first line as they can be reused for every line
--(NSArray *)firstLineFrames
+-(NSArray<NSValue *> *)firstLineFrames
 {
     if (!_firstLineFrames) {
         
@@ -192,7 +192,7 @@ static CGFloat const RDHLineExtensionDefault = 0;
         CGRect frame = CGRectZero;
         frame.size = self.calculatedItemSize;
         
-        NSMutableArray *frames = [NSMutableArray arrayWithCapacity:self.lineItemCount];
+        NSMutableArray<NSValue *> *frames = [NSMutableArray arrayWithCapacity:self.lineItemCount];
         
         for (NSUInteger i=0; i<self.lineItemCount; i++) {
             
@@ -334,7 +334,7 @@ static CGFloat const RDHLineExtensionDefault = 0;
     return size;
 }
 
--(UICollectionViewLayoutAttributes *)calculateLayoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
+-(nonnull UICollectionViewLayoutAttributes *)calculateLayoutAttributesForItemAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
     UICollectionViewLayoutAttributes *attrs = [[[self class] layoutAttributesClass] layoutAttributesForCellWithIndexPath:indexPath];
     
