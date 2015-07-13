@@ -8,7 +8,7 @@
 
 #import "RDHDemoViewController.h"
 
-#import "RDHCollectionViewGridLayout.h"
+@import RDHCollectionViewGridLayout;
 
 #import "RDHDemoCell.h"
 

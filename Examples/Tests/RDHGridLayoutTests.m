@@ -8,7 +8,7 @@
 
 #import <XCTest/XCTest.h>
 
-#import "RDHCollectionViewGridLayout.h"
+@import RDHCollectionViewGridLayout;
 
 #import "Tests-Swift.h"
 

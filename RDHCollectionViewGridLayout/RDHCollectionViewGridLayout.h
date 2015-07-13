@@ -9,6 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <CoreGraphics/CoreGraphics.h>
 
+/// Project version number for RDHCollectionViewGridLayout.
+FOUNDATION_EXPORT double RDHCollectionViewGridLayoutVersionNumber;
+
+/// Project version string for RDHCollectionViewGridLayout.
+FOUNDATION_EXPORT const unsigned char RDHCollectionViewGridLayoutVersionString[];
+
 @interface RDHCollectionViewGridLayout : UICollectionViewLayout
 
 /**
