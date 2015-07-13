@@ -8,12 +8,23 @@ RDHCollectionViewGridLayout
 [![Reference Status](https://www.versioneye.com/objective-c/rdhcollectionviewgridlayout/reference_badge.svg)](https://www.versioneye.com/objective-c/rdhcollectionviewgridlayout/references)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-Works and tested on iOS 6.0 to 8.3 (under both Xcode 6.1, 6.2 and 6.3), but if you find any issues please [report](https://github.com/rhodgkins/RDHCollectionViewGridLayout/issues) them!
+Works and tested on iOS 6.0 to 8.4 (under Xcode 6.4), but if you find any issues please [report](https://github.com/rhodgkins/RDHCollectionViewGridLayout/issues) them!
+
+Cocoapods
+---------
 
 Grid layout for UICollectionView.
 ``` ruby 
 pod 'RDHCollectionViewGridLayout', '~> 1.2'
 ```
+
+Carthage
+---------
+
+As of 1.2.2 Carthage support has been added.
+
+Summary
+-------
 
 This layout provides simple options for customisation of a collection view as a grid layout.
 Supporting vertical and horizontal scrolling directions, the layout also takes care of left over pixels at the end of rows.
