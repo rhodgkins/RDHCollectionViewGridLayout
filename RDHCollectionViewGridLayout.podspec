@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name = 'RDHCollectionViewGridLayout'
-    s.version = '1.2.2'
+    s.version = '1.2.3'
     s.license = 'MIT'
     
     s.summary = 'Grid layout for UICollectionView.'

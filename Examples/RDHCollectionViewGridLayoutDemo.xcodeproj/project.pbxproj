@@ -702,6 +702,7 @@
 				449FA24E1B54490200EAD562 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
