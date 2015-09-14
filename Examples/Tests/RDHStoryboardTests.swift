@@ -36,7 +36,7 @@ class RDHStoryboardTests: XCTestCase {
     }
     
     private func updateWindowFrame() {
-        var frame = CGRect.zeroRect
+        var frame = CGRect.zero
         if layout.scrollDirection == .Vertical {
             frame.size.width = 640
             frame.size.height = 2000

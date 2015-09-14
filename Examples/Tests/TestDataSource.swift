@@ -22,7 +22,7 @@ import UIKit.UICollectionView
     }
     
     public func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(self.dynamicType.CellID, forIndexPath:indexPath) as! UICollectionViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(self.dynamicType.CellID, forIndexPath:indexPath) 
         cell.backgroundColor = UIColor.redColor()
         return cell
     }
