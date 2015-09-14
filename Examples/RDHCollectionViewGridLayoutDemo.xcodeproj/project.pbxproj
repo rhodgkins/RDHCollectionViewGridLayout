@@ -23,8 +23,7 @@
 		444926661AB6C17A002DBB57 /* RDHStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444926651AB6C17A002DBB57 /* RDHStoryboardTests.swift */; };
 		4449266A1AB6C24D002DBB57 /* TestDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444926691AB6C24D002DBB57 /* TestDataSource.swift */; };
 		4449266C1AB6C94C002DBB57 /* TestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4449266B1AB6C94C002DBB57 /* TestStoryboard.storyboard */; };
-		449FA24B1B54490100EAD562 /* RDHCollectionViewGridLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449FA2341B54490100EAD562 /* RDHCollectionViewGridLayout.framework */; };
-		449FA24C1B54490100EAD562 /* RDHCollectionViewGridLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 449FA2341B54490100EAD562 /* RDHCollectionViewGridLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		446C8D771BA76D2900FFB0E3 /* RDHCollectionViewGridLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449FA2341B54490100EAD562 /* RDHCollectionViewGridLayout.framework */; };
 		449FA2541B54495200EAD562 /* RDHCollectionViewGridLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 4437B7D31954CB5A005CCBBC /* RDHCollectionViewGridLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		449FA2551B54495700EAD562 /* RDHCollectionViewGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4437B7D41954CB5A005CCBBC /* RDHCollectionViewGridLayout.m */; };
 /* End PBXBuildFile section */
@@ -37,28 +36,7 @@
 			remoteGlobalIDString = 442BF3F017896E1D003FAB93;
 			remoteInfo = RDHCollectionViewGridLayoutDemo;
 		};
-		449FA2491B54490100EAD562 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 442BF3E917896E1D003FAB93 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 449FA2331B54490100EAD562;
-			remoteInfo = RDHCollectionViewGridLayout;
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		449FA2521B54490200EAD562 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				449FA24C1B54490100EAD562 /* RDHCollectionViewGridLayout.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		442BF3F117896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RDHCollectionViewGridLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +71,7 @@
 		444926651AB6C17A002DBB57 /* RDHStoryboardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDHStoryboardTests.swift; sourceTree = "<group>"; };
 		444926691AB6C24D002DBB57 /* TestDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDataSource.swift; sourceTree = "<group>"; };
 		4449266B1AB6C94C002DBB57 /* TestStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestStoryboard.storyboard; sourceTree = "<group>"; };
+		446C8D781BA76D7C00FFB0E3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		449FA2341B54490100EAD562 /* RDHCollectionViewGridLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RDHCollectionViewGridLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		449FA2371B54490100EAD562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,9 +81,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				446C8D771BA76D2900FFB0E3 /* RDHCollectionViewGridLayout.framework in Frameworks */,
 				442BF3F517896E1D003FAB93 /* UIKit.framework in Frameworks */,
 				442BF3F717896E1D003FAB93 /* Foundation.framework in Frameworks */,
-				449FA24B1B54490100EAD562 /* RDHCollectionViewGridLayout.framework in Frameworks */,
 				442BF3F917896E1D003FAB93 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,6 +197,7 @@
 		4437B8011956DF0B005CCBBC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				446C8D781BA76D7C00FFB0E3 /* Info.plist */,
 				4437B8101956DF56005CCBBC /* Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -262,12 +242,10 @@
 				442BF3ED17896E1D003FAB93 /* Sources */,
 				442BF3EE17896E1D003FAB93 /* Frameworks */,
 				442BF3EF17896E1D003FAB93 /* Resources */,
-				449FA2521B54490200EAD562 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				449FA24A1B54490100EAD562 /* PBXTargetDependency */,
 			);
 			name = RDHCollectionViewGridLayoutDemo;
 			productName = RDHCollectionViewGridLayoutDemo;
@@ -413,11 +391,6 @@
 			target = 442BF3F017896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo */;
 			targetProxy = 4437B8091956DF0B005CCBBC /* PBXContainerItemProxy */;
 		};
-		449FA24A1B54490100EAD562 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 449FA2331B54490100EAD562 /* RDHCollectionViewGridLayout */;
-			targetProxy = 449FA2491B54490100EAD562 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -535,11 +508,6 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -551,8 +519,8 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tests/Tests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -570,11 +538,6 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				ENABLE_NS_ASSERTIONS = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -582,8 +545,8 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tests/Tests-Bridging-Header.h";
 				TEST_HOST = "$(BUNDLE_LOADER)";
