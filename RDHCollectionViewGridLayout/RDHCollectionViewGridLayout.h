@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Rich H. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import <CoreGraphics/CoreGraphics.h>
+@import UIKit;
+@import CoreGraphics;
 
 /// Project version number for RDHCollectionViewGridLayout.
 FOUNDATION_EXPORT double RDHCollectionViewGridLayoutVersionNumber;
