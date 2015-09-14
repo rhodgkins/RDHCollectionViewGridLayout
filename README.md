@@ -4,11 +4,9 @@ RDHCollectionViewGridLayout
 [![Pod Version](http://img.shields.io/cocoapods/v/RDHCollectionViewGridLayout.svg)](http://cocoadocs.org/docsets/RDHCollectionViewGridLayout/)
 [![Pod Platform](http://img.shields.io/cocoapods/p/RDHCollectionViewGridLayout.svg)](http://cocoadocs.org/docsets/RDHCollectionViewGridLayout/)
 [![Pod License](http://img.shields.io/cocoapods/l/RDHCollectionViewGridLayout.svg)](http://opensource.org/licenses/MIT)
-[![Dependency Status](https://www.versioneye.com/objective-c/rdhcollectionviewgridlayout/1.2.0/badge.svg)](https://www.versioneye.com/objective-c/rdhcollectionviewgridlayout/1.2.0)
-[![Reference Status](https://www.versioneye.com/objective-c/rdhcollectionviewgridlayout/reference_badge.svg)](https://www.versioneye.com/objective-c/rdhcollectionviewgridlayout/references)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-Works and tested on iOS 6.0 to 8.4 (under Xcode 6.4), but if you find any issues please [report](https://github.com/rhodgkins/RDHCollectionViewGridLayout/issues) them!
+Works and tested on iOS 6.0 to 9.0 (under Xcode 7.0), but if you find any issues please [report](https://github.com/rhodgkins/RDHCollectionViewGridLayout/issues) them!
 
 Cocoapods
 ---------
