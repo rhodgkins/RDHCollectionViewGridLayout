@@ -47,6 +47,16 @@
     self.layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     XCTAssertEqual(self.layout.scrollDirection, UICollectionViewScrollDirectionHorizontal, @"Scroll direction should be horiztonal");
     
+    self.layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    XCTAssertFalse([[self.layout valueForKeyPath:@"verticalScrolling"] boolValue]);
+    self.layout.scrollDirection = UICollectionViewScrollDirectionVertical;
+    XCTAssertTrue([[self.layout valueForKeyPath:@"verticalScrolling"] boolValue]);
+    
+    [self.layout setValue:@YES forKey:@"verticalScrolling"];
+    XCTAssertEqual(self.layout.scrollDirection, UICollectionViewScrollDirectionVertical, @"Scroll direction should be vertical");
+    [self.layout setValue:@NO forKey:@"verticalScrolling"];
+    XCTAssertEqual(self.layout.scrollDirection, UICollectionViewScrollDirectionHorizontal, @"Scroll direction should be horiztonal");
+    
     self.layout.lineSize = 123;
     XCTAssertEqual(self.layout.lineSize, 123, @"Line size is incorrect");
     XCTAssertEqual(self.layout.lineMultiplier, 1, @"Line multiplier should be default");
