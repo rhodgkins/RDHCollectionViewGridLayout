@@ -13,6 +13,7 @@ PRODUCT_BUNDLE_IDENTIFIER               = uk.co.rhodgkins.$(PRODUCT_NAME:rfc1034
 CVGL_VERSION                            = 1.2.3
 
 // Universal Framework
+APPLICATION_EXTENSION_API_ONLY          = YES
 
 SUPPORTED_PLATFORMS                     = iphoneos iphonesimulator appletvos appletvsimulator
 
@@ -28,7 +29,7 @@ INFOPLIST_FILE                          = $(PRODUCT_NAME)/Info.plist
 
 // iOS
 CODE_SIGN_IDENTITY[sdk=iphoneos*]       = iPhone Developer
-IPHONEOS_DEPLOYMENT_TARGET[sdk=iphone*] = 8.0
+IPHONEOS_DEPLOYMENT_TARGET[sdk=iphone*] = 6.0
 TARGETED_DEVICE_FAMILY[sdk=iphone*]     = 1,2
 
 // tvOS
