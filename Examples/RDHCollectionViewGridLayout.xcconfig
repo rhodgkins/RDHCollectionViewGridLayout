@@ -14,6 +14,7 @@ CVGL_VERSION                            = 1.2.3
 
 // Universal Framework
 APPLICATION_EXTENSION_API_ONLY          = YES
+COMBINE_HIDPI_IMAGES                    = YES
 
 SUPPORTED_PLATFORMS                     = iphoneos iphonesimulator appletvos appletvsimulator
 

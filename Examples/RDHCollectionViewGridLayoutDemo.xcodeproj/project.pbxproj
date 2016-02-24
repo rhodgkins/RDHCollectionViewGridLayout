@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		442B4B261C7E694400C5B5FC /* RDHCollectionViewGridLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 442B4B1A1C7E685800C5B5FC /* RDHCollectionViewGridLayout.framework */; };
+		442B4B271C7E694400C5B5FC /* RDHCollectionViewGridLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 442B4B1A1C7E685800C5B5FC /* RDHCollectionViewGridLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		442B4B2B1C7E694700C5B5FC /* RDHCollectionViewGridLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 442B4B1A1C7E685800C5B5FC /* RDHCollectionViewGridLayout.framework */; };
+		442B4B2C1C7E694700C5B5FC /* RDHCollectionViewGridLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 442B4B1A1C7E685800C5B5FC /* RDHCollectionViewGridLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		442B4B301C7E699900C5B5FC /* RDHCollectionViewGridLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 4437B7D31954CB5A005CCBBC /* RDHCollectionViewGridLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		442B4B311C7E699E00C5B5FC /* RDHCollectionViewGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4437B7D41954CB5A005CCBBC /* RDHCollectionViewGridLayout.m */; };
 		442BF3FF17896E1D003FAB93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 442BF3FD17896E1D003FAB93 /* InfoPlist.strings */; };
 		442BF40117896E1D003FAB93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 442BF40017896E1D003FAB93 /* main.m */; };
 		442BF40517896E1D003FAB93 /* RDHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 442BF40417896E1D003FAB93 /* RDHAppDelegate.m */; };
@@ -17,19 +23,27 @@
 		444926661AB6C17A002DBB57 /* RDHStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444926651AB6C17A002DBB57 /* RDHStoryboardTests.swift */; };
 		4449266A1AB6C24D002DBB57 /* TestDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444926691AB6C24D002DBB57 /* TestDataSource.swift */; };
 		4449266C1AB6C94C002DBB57 /* TestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4449266B1AB6C94C002DBB57 /* TestStoryboard.storyboard */; };
-		446C8D7A1BA76EB000FFB0E3 /* RDHCollectionViewGridLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449FA2341B54490100EAD562 /* RDHCollectionViewGridLayout.framework */; };
-		446C8D7B1BA76EB000FFB0E3 /* RDHCollectionViewGridLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 449FA2341B54490100EAD562 /* RDHCollectionViewGridLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		449FA2541B54495200EAD562 /* RDHCollectionViewGridLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 4437B7D31954CB5A005CCBBC /* RDHCollectionViewGridLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		449FA2551B54495700EAD562 /* RDHCollectionViewGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4437B7D41954CB5A005CCBBC /* RDHCollectionViewGridLayout.m */; };
 		44F92B381C7E65E900A0AD0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F92B371C7E65E900A0AD0A /* AppDelegate.swift */; };
 		44F92B3A1C7E65E900A0AD0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F92B391C7E65E900A0AD0A /* ViewController.swift */; };
 		44F92B3D1C7E65E900A0AD0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F92B3B1C7E65E900A0AD0A /* Main.storyboard */; };
 		44F92B3F1C7E65EA00A0AD0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44F92B3E1C7E65EA00A0AD0A /* Assets.xcassets */; };
-		44F92B441C7E662900A0AD0A /* RDHCollectionViewGridLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449FA2341B54490100EAD562 /* RDHCollectionViewGridLayout.framework */; };
-		44F92B451C7E662900A0AD0A /* RDHCollectionViewGridLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 449FA2341B54490100EAD562 /* RDHCollectionViewGridLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		442B4B281C7E694400C5B5FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 442BF3E917896E1D003FAB93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 442B4B191C7E685800C5B5FC;
+			remoteInfo = RDHCollectionViewGridLayout;
+		};
+		442B4B2D1C7E694700C5B5FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 442BF3E917896E1D003FAB93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 442B4B191C7E685800C5B5FC;
+			remoteInfo = RDHCollectionViewGridLayout;
+		};
 		4437B8091956DF0B005CCBBC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 442BF3E917896E1D003FAB93 /* Project object */;
@@ -37,30 +51,16 @@
 			remoteGlobalIDString = 442BF3F017896E1D003FAB93;
 			remoteInfo = RDHCollectionViewGridLayoutDemo;
 		};
-		446C8D7C1BA76EB000FFB0E3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 442BF3E917896E1D003FAB93 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 449FA2331B54490100EAD562;
-			remoteInfo = RDHCollectionViewGridLayout;
-		};
-		44F92B461C7E662900A0AD0A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 442BF3E917896E1D003FAB93 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 449FA2331B54490100EAD562;
-			remoteInfo = RDHCollectionViewGridLayout;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		446C8D7E1BA76EB100FFB0E3 /* Embed Frameworks */ = {
+		442B4B2A1C7E694400C5B5FC /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				446C8D7B1BA76EB000FFB0E3 /* RDHCollectionViewGridLayout.framework in Embed Frameworks */,
+				442B4B271C7E694400C5B5FC /* RDHCollectionViewGridLayout.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,7 +71,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				44F92B451C7E662900A0AD0A /* RDHCollectionViewGridLayout.framework in Embed Frameworks */,
+				442B4B2C1C7E694700C5B5FC /* RDHCollectionViewGridLayout.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +79,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		442B4B1A1C7E685800C5B5FC /* RDHCollectionViewGridLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RDHCollectionViewGridLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		442BF3F117896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RDHCollectionViewGridLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		442BF3FC17896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RDHCollectionViewGridLayoutDemo-Info.plist"; sourceTree = "<group>"; };
 		442BF3FE17896E1D003FAB93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -108,7 +109,6 @@
 		444926691AB6C24D002DBB57 /* TestDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDataSource.swift; sourceTree = "<group>"; };
 		4449266B1AB6C94C002DBB57 /* TestStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestStoryboard.storyboard; sourceTree = "<group>"; };
 		446C8D781BA76D7C00FFB0E3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		449FA2341B54490100EAD562 /* RDHCollectionViewGridLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RDHCollectionViewGridLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		449FA2371B54490100EAD562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44F92B301C7E4A6000A0AD0A /* RDHCollectionViewGridLayout.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = RDHCollectionViewGridLayout.xcconfig; sourceTree = "<group>"; };
 		44F92B351C7E65E900A0AD0A /* AppleTVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleTVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,11 +120,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		442B4B161C7E685800C5B5FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		442BF3EE17896E1D003FAB93 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				446C8D7A1BA76EB000FFB0E3 /* RDHCollectionViewGridLayout.framework in Frameworks */,
+				442B4B261C7E694400C5B5FC /* RDHCollectionViewGridLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,18 +142,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		449FA2301B54490100EAD562 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		44F92B321C7E65E900A0AD0A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44F92B441C7E662900A0AD0A /* RDHCollectionViewGridLayout.framework in Frameworks */,
+				442B4B2B1C7E694700C5B5FC /* RDHCollectionViewGridLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,8 +175,8 @@
 			children = (
 				442BF3F117896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo.app */,
 				4437B7FB1956DF0B005CCBBC /* Tests.xctest */,
-				449FA2341B54490100EAD562 /* RDHCollectionViewGridLayout.framework */,
 				44F92B351C7E65E900A0AD0A /* AppleTVDemo.app */,
+				442B4B1A1C7E685800C5B5FC /* RDHCollectionViewGridLayout.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -272,17 +272,35 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		449FA2311B54490100EAD562 /* Headers */ = {
+		442B4B171C7E685800C5B5FC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				449FA2541B54495200EAD562 /* RDHCollectionViewGridLayout.h in Headers */,
+				442B4B301C7E699900C5B5FC /* RDHCollectionViewGridLayout.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		442B4B191C7E685800C5B5FC /* RDHCollectionViewGridLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 442B4B231C7E685800C5B5FC /* Build configuration list for PBXNativeTarget "RDHCollectionViewGridLayout" */;
+			buildPhases = (
+				442B4B151C7E685800C5B5FC /* Sources */,
+				442B4B161C7E685800C5B5FC /* Frameworks */,
+				442B4B171C7E685800C5B5FC /* Headers */,
+				442B4B181C7E685800C5B5FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RDHCollectionViewGridLayout;
+			productName = RDHCollectionViewGridLayout;
+			productReference = 442B4B1A1C7E685800C5B5FC /* RDHCollectionViewGridLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		442BF3F017896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 442BF40E17896E1D003FAB93 /* Build configuration list for PBXNativeTarget "RDHCollectionViewGridLayoutDemo" */;
@@ -290,12 +308,12 @@
 				442BF3ED17896E1D003FAB93 /* Sources */,
 				442BF3EE17896E1D003FAB93 /* Frameworks */,
 				442BF3EF17896E1D003FAB93 /* Resources */,
-				446C8D7E1BA76EB100FFB0E3 /* Embed Frameworks */,
+				442B4B2A1C7E694400C5B5FC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				446C8D7D1BA76EB000FFB0E3 /* PBXTargetDependency */,
+				442B4B291C7E694400C5B5FC /* PBXTargetDependency */,
 			);
 			name = RDHCollectionViewGridLayoutDemo;
 			productName = RDHCollectionViewGridLayoutDemo;
@@ -320,24 +338,6 @@
 			productReference = 4437B7FB1956DF0B005CCBBC /* Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		449FA2331B54490100EAD562 /* RDHCollectionViewGridLayout */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 449FA2511B54490200EAD562 /* Build configuration list for PBXNativeTarget "RDHCollectionViewGridLayout" */;
-			buildPhases = (
-				449FA22F1B54490100EAD562 /* Sources */,
-				449FA2301B54490100EAD562 /* Frameworks */,
-				449FA2311B54490100EAD562 /* Headers */,
-				449FA2321B54490100EAD562 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = RDHCollectionViewGridLayout;
-			productName = RDHCollectionViewGridLayout;
-			productReference = 449FA2341B54490100EAD562 /* RDHCollectionViewGridLayout.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		44F92B341C7E65E900A0AD0A /* AppleTVDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44F92B411C7E65EA00A0AD0A /* Build configuration list for PBXNativeTarget "AppleTVDemo" */;
@@ -350,7 +350,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				44F92B471C7E662900A0AD0A /* PBXTargetDependency */,
+				442B4B2E1C7E694700C5B5FC /* PBXTargetDependency */,
 			);
 			name = AppleTVDemo;
 			productName = AppleTVDemo;
@@ -365,14 +365,14 @@
 			attributes = {
 				CLASSPREFIX = RDH;
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Rich H";
 				TargetAttributes = {
+					442B4B191C7E685800C5B5FC = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 					4437B7FA1956DF0B005CCBBC = {
 						TestTargetID = 442BF3F017896E1D003FAB93;
-					};
-					449FA2331B54490100EAD562 = {
-						CreatedOnToolsVersion = 6.4;
 					};
 					44F92B341C7E65E900A0AD0A = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -392,7 +392,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				449FA2331B54490100EAD562 /* RDHCollectionViewGridLayout */,
+				442B4B191C7E685800C5B5FC /* RDHCollectionViewGridLayout */,
 				442BF3F017896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo */,
 				44F92B341C7E65E900A0AD0A /* AppleTVDemo */,
 				4437B7FA1956DF0B005CCBBC /* Tests */,
@@ -401,6 +401,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		442B4B181C7E685800C5B5FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		442BF3EF17896E1D003FAB93 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -418,13 +425,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		449FA2321B54490100EAD562 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		44F92B331C7E65E900A0AD0A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -437,6 +437,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		442B4B151C7E685800C5B5FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				442B4B311C7E699E00C5B5FC /* RDHCollectionViewGridLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		442BF3ED17896E1D003FAB93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -458,14 +466,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		449FA22F1B54490100EAD562 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				449FA2551B54495700EAD562 /* RDHCollectionViewGridLayout.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		44F92B311C7E65E900A0AD0A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -478,20 +478,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		442B4B291C7E694400C5B5FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 442B4B191C7E685800C5B5FC /* RDHCollectionViewGridLayout */;
+			targetProxy = 442B4B281C7E694400C5B5FC /* PBXContainerItemProxy */;
+		};
+		442B4B2E1C7E694700C5B5FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 442B4B191C7E685800C5B5FC /* RDHCollectionViewGridLayout */;
+			targetProxy = 442B4B2D1C7E694700C5B5FC /* PBXContainerItemProxy */;
+		};
 		4437B80A1956DF0B005CCBBC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 442BF3F017896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo */;
 			targetProxy = 4437B8091956DF0B005CCBBC /* PBXContainerItemProxy */;
-		};
-		446C8D7D1BA76EB000FFB0E3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 449FA2331B54490100EAD562 /* RDHCollectionViewGridLayout */;
-			targetProxy = 446C8D7C1BA76EB000FFB0E3 /* PBXContainerItemProxy */;
-		};
-		44F92B471C7E662900A0AD0A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 449FA2331B54490100EAD562 /* RDHCollectionViewGridLayout */;
-			targetProxy = 44F92B461C7E662900A0AD0A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -515,6 +515,71 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		442B4B241C7E685800C5B5FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44F92B301C7E4A6000A0AD0A /* RDHCollectionViewGridLayout.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				SDKROOT = "";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		442B4B251C7E685800C5B5FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44F92B301C7E4A6000A0AD0A /* RDHCollectionViewGridLayout.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = "";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		442BF40C17896E1D003FAB93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -668,63 +733,6 @@
 			};
 			name = Release;
 		};
-		449FA24D1B54490200EAD562 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44F92B301C7E4A6000A0AD0A /* RDHCollectionViewGridLayout.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				SDKROOT = "";
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		449FA24E1B54490200EAD562 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44F92B301C7E4A6000A0AD0A /* RDHCollectionViewGridLayout.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = "";
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		44F92B421C7E65EA00A0AD0A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -735,6 +743,7 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -789,6 +798,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		442B4B231C7E685800C5B5FC /* Build configuration list for PBXNativeTarget "RDHCollectionViewGridLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				442B4B241C7E685800C5B5FC /* Debug */,
+				442B4B251C7E685800C5B5FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		442BF3EC17896E1D003FAB93 /* Build configuration list for PBXProject "RDHCollectionViewGridLayoutDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -812,15 +829,6 @@
 			buildConfigurations = (
 				4437B80B1956DF0B005CCBBC /* Debug */,
 				4437B80C1956DF0B005CCBBC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		449FA2511B54490200EAD562 /* Build configuration list for PBXNativeTarget "RDHCollectionViewGridLayout" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				449FA24D1B54490200EAD562 /* Debug */,
-				449FA24E1B54490200EAD562 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

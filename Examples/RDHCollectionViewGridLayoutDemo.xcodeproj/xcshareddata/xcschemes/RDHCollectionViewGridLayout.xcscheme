@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "449FA2331B54490100EAD562"
+               BlueprintIdentifier = "442B4B191C7E685800C5B5FC"
                BuildableName = "RDHCollectionViewGridLayout.framework"
                BlueprintName = "RDHCollectionViewGridLayout"
                ReferencedContainer = "container:RDHCollectionViewGridLayoutDemo.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "449FA2331B54490100EAD562"
+            BlueprintIdentifier = "442B4B191C7E685800C5B5FC"
             BuildableName = "RDHCollectionViewGridLayout.framework"
             BlueprintName = "RDHCollectionViewGridLayout"
             ReferencedContainer = "container:RDHCollectionViewGridLayoutDemo.xcodeproj">
@@ -63,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "449FA2331B54490100EAD562"
+            BlueprintIdentifier = "442B4B191C7E685800C5B5FC"
             BuildableName = "RDHCollectionViewGridLayout.framework"
             BlueprintName = "RDHCollectionViewGridLayout"
             ReferencedContainer = "container:RDHCollectionViewGridLayoutDemo.xcodeproj">
