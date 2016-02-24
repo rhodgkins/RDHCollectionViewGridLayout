@@ -21,6 +21,12 @@
 		446C8D7B1BA76EB000FFB0E3 /* RDHCollectionViewGridLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 449FA2341B54490100EAD562 /* RDHCollectionViewGridLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		449FA2541B54495200EAD562 /* RDHCollectionViewGridLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 4437B7D31954CB5A005CCBBC /* RDHCollectionViewGridLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		449FA2551B54495700EAD562 /* RDHCollectionViewGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4437B7D41954CB5A005CCBBC /* RDHCollectionViewGridLayout.m */; };
+		44F92B381C7E65E900A0AD0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F92B371C7E65E900A0AD0A /* AppDelegate.swift */; };
+		44F92B3A1C7E65E900A0AD0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F92B391C7E65E900A0AD0A /* ViewController.swift */; };
+		44F92B3D1C7E65E900A0AD0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F92B3B1C7E65E900A0AD0A /* Main.storyboard */; };
+		44F92B3F1C7E65EA00A0AD0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44F92B3E1C7E65EA00A0AD0A /* Assets.xcassets */; };
+		44F92B441C7E662900A0AD0A /* RDHCollectionViewGridLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449FA2341B54490100EAD562 /* RDHCollectionViewGridLayout.framework */; };
+		44F92B451C7E662900A0AD0A /* RDHCollectionViewGridLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 449FA2341B54490100EAD562 /* RDHCollectionViewGridLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,13 @@
 			remoteGlobalIDString = 449FA2331B54490100EAD562;
 			remoteInfo = RDHCollectionViewGridLayout;
 		};
+		44F92B461C7E662900A0AD0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 442BF3E917896E1D003FAB93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 449FA2331B54490100EAD562;
+			remoteInfo = RDHCollectionViewGridLayout;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,6 +61,17 @@
 			dstSubfolderSpec = 10;
 			files = (
 				446C8D7B1BA76EB000FFB0E3 /* RDHCollectionViewGridLayout.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F92B481C7E662900A0AD0A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				44F92B451C7E662900A0AD0A /* RDHCollectionViewGridLayout.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,6 +111,12 @@
 		449FA2341B54490100EAD562 /* RDHCollectionViewGridLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RDHCollectionViewGridLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		449FA2371B54490100EAD562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44F92B301C7E4A6000A0AD0A /* RDHCollectionViewGridLayout.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = RDHCollectionViewGridLayout.xcconfig; sourceTree = "<group>"; };
+		44F92B351C7E65E900A0AD0A /* AppleTVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleTVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44F92B371C7E65E900A0AD0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44F92B391C7E65E900A0AD0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44F92B3C1C7E65E900A0AD0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44F92B3E1C7E65EA00A0AD0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44F92B401C7E65EA00A0AD0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +142,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		44F92B321C7E65E900A0AD0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F92B441C7E662900A0AD0A /* RDHCollectionViewGridLayout.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -127,6 +165,7 @@
 				449FA2351B54490100EAD562 /* RDHCollectionViewGridLayout */,
 				442BF3FA17896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo */,
 				4437B8001956DF0B005CCBBC /* Tests */,
+				44F92B361C7E65E900A0AD0A /* AppleTVDemo */,
 				442BF3F217896E1D003FAB93 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -137,6 +176,7 @@
 				442BF3F117896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo.app */,
 				4437B7FB1956DF0B005CCBBC /* Tests.xctest */,
 				449FA2341B54490100EAD562 /* RDHCollectionViewGridLayout.framework */,
+				44F92B351C7E65E900A0AD0A /* AppleTVDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -217,6 +257,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		44F92B361C7E65E900A0AD0A /* AppleTVDemo */ = {
+			isa = PBXGroup;
+			children = (
+				44F92B371C7E65E900A0AD0A /* AppDelegate.swift */,
+				44F92B391C7E65E900A0AD0A /* ViewController.swift */,
+				44F92B3B1C7E65E900A0AD0A /* Main.storyboard */,
+				44F92B3E1C7E65EA00A0AD0A /* Assets.xcassets */,
+				44F92B401C7E65EA00A0AD0A /* Info.plist */,
+			);
+			path = AppleTVDemo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -286,6 +338,25 @@
 			productReference = 449FA2341B54490100EAD562 /* RDHCollectionViewGridLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		44F92B341C7E65E900A0AD0A /* AppleTVDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44F92B411C7E65EA00A0AD0A /* Build configuration list for PBXNativeTarget "AppleTVDemo" */;
+			buildPhases = (
+				44F92B311C7E65E900A0AD0A /* Sources */,
+				44F92B321C7E65E900A0AD0A /* Frameworks */,
+				44F92B331C7E65E900A0AD0A /* Resources */,
+				44F92B481C7E662900A0AD0A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44F92B471C7E662900A0AD0A /* PBXTargetDependency */,
+			);
+			name = AppleTVDemo;
+			productName = AppleTVDemo;
+			productReference = 44F92B351C7E65E900A0AD0A /* AppleTVDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -293,7 +364,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = RDH;
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Rich H";
 				TargetAttributes = {
@@ -303,6 +374,9 @@
 					449FA2331B54490100EAD562 = {
 						CreatedOnToolsVersion = 6.4;
 					};
+					44F92B341C7E65E900A0AD0A = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 442BF3EC17896E1D003FAB93 /* Build configuration list for PBXProject "RDHCollectionViewGridLayoutDemo" */;
@@ -311,6 +385,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 442BF3E817896E1D003FAB93;
 			productRefGroup = 442BF3F217896E1D003FAB93 /* Products */;
@@ -319,6 +394,7 @@
 			targets = (
 				449FA2331B54490100EAD562 /* RDHCollectionViewGridLayout */,
 				442BF3F017896E1D003FAB93 /* RDHCollectionViewGridLayoutDemo */,
+				44F92B341C7E65E900A0AD0A /* AppleTVDemo */,
 				4437B7FA1956DF0B005CCBBC /* Tests */,
 			);
 		};
@@ -346,6 +422,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F92B331C7E65E900A0AD0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F92B3F1C7E65EA00A0AD0A /* Assets.xcassets in Resources */,
+				44F92B3D1C7E65E900A0AD0A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +466,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		44F92B311C7E65E900A0AD0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F92B3A1C7E65E900A0AD0A /* ViewController.swift in Sources */,
+				44F92B381C7E65E900A0AD0A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -394,6 +488,11 @@
 			target = 449FA2331B54490100EAD562 /* RDHCollectionViewGridLayout */;
 			targetProxy = 446C8D7C1BA76EB000FFB0E3 /* PBXContainerItemProxy */;
 		};
+		44F92B471C7E662900A0AD0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 449FA2331B54490100EAD562 /* RDHCollectionViewGridLayout */;
+			targetProxy = 44F92B461C7E662900A0AD0A /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -403,6 +502,14 @@
 				442BF3FE17896E1D003FAB93 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		44F92B3B1C7E65E900A0AD0A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44F92B3C1C7E65E900A0AD0A /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -620,6 +727,66 @@
 			};
 			name = Release;
 		};
+		44F92B421C7E65EA00A0AD0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = AppleTVDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.rhodgkins.RDHCollectionViewGridLayoutDemo.AppleTVDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		44F92B431C7E65EA00A0AD0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = AppleTVDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.rhodgkins.RDHCollectionViewGridLayoutDemo.AppleTVDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -658,6 +825,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		44F92B411C7E65EA00A0AD0A /* Build configuration list for PBXNativeTarget "AppleTVDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44F92B421C7E65EA00A0AD0A /* Debug */,
+				44F92B431C7E65EA00A0AD0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

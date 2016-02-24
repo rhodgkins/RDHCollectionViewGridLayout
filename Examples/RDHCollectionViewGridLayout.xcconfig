@@ -29,7 +29,7 @@ INFOPLIST_FILE                          = $(PRODUCT_NAME)/Info.plist
 
 // iOS
 CODE_SIGN_IDENTITY[sdk=iphoneos*]       = iPhone Developer
-IPHONEOS_DEPLOYMENT_TARGET[sdk=iphone*] = 6.0
+IPHONEOS_DEPLOYMENT_TARGET[sdk=iphone*] = 8.0
 TARGETED_DEVICE_FAMILY[sdk=iphone*]     = 1,2
 
 // tvOS
