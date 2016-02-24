@@ -1,0 +1,36 @@
+//
+//  RDHCollectionViewGridLayout.xcconfig
+//  RDHCollectionViewGridLayout
+//
+//  Created by Richard Hodgkins on 24/02/2016.
+//  Copyright © 2016 Rich H. All rights reserved.
+//
+
+// Custom
+
+PRODUCT_NAME                            = RDHCollectionViewGridLayout
+PRODUCT_BUNDLE_IDENTIFIER               = uk.co.rhodgkins.$(PRODUCT_NAME:rfc1034identifier)
+CVGL_VERSION                            = 1.2.3
+
+// Universal Framework
+
+SUPPORTED_PLATFORMS                     = iphoneos iphonesimulator appletvos appletvsimulator
+
+VALID_ARCHS[sdk=iphone*]                = arm64 armv7 armv7s
+VALID_ARCHS[sdk=appletv*]               = arm64
+
+LD_RUNPATH_SEARCH_PATHS[sdk=iphone*]    = $(inherited) @executable_path/Frameworks @loader_path/Frameworks
+LD_RUNPATH_SEARCH_PATHS[sdk=appletv*]   = $(inherited) @executable_path/Frameworks @loader_path/Frameworks
+
+INFOPLIST_FILE                          = $(PRODUCT_NAME)/Info.plist
+
+// Platform-specific
+
+// iOS
+CODE_SIGN_IDENTITY[sdk=iphoneos*]       = iPhone Developer
+IPHONEOS_DEPLOYMENT_TARGET[sdk=iphone*] = 8.0
+TARGETED_DEVICE_FAMILY[sdk=iphone*]     = 1,2
+
+// tvOS
+CODE_SIGN_IDENTITY[sdk=appletvos*]      = iPhone Developer
+TVOS_DEPLOYMENT_TARGET[sdk=appletvos*]  = 9.0
