@@ -118,7 +118,9 @@ static CGFloat const RDHLineExtensionDefault = 0;
         case UICollectionViewScrollDirectionHorizontal:
             size.width = self.numberOfLines * self.calculatedItemSize.width;
             // Add spacings
-            size.width += (self.numberOfLines - 1) * self.lineSpacing;
+            if (self.numberOfLines > 0) {
+                size.width += (self.numberOfLines - 1) * self.lineSpacing;
+            }
             size.height = [self constrainedCollectionViewDimension];
             break;
             
@@ -126,7 +128,9 @@ static CGFloat const RDHLineExtensionDefault = 0;
             size.width = [self constrainedCollectionViewDimension];
             size.height = self.numberOfLines * self.calculatedItemSize.height;
             // Add spacings
-            size.height += (self.numberOfLines - 1) * self.lineSpacing;
+            if (self.numberOfLines > 0) {
+                size.height += (self.numberOfLines - 1) * self.lineSpacing;
+            }
             break;
     }
     
