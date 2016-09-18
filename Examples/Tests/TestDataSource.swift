@@ -9,21 +9,21 @@
 import Foundation
 import UIKit.UICollectionView
 
-@objc public class TestDataSource: NSObject, UICollectionViewDataSource {
+@objc final class TestDataSource: NSObject, UICollectionViewDataSource {
     
-    public class var CellID: String { return "CellID" }
+    class var CellID: String { return "CellID" }
     
-    public func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 3
     }
     
-    public func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 3
     }
     
-    public func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(self.dynamicType.CellID, forIndexPath:indexPath) 
-        cell.backgroundColor = UIColor.redColor()
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: type(of: self).CellID, for:indexPath) 
+        cell.backgroundColor = UIColor.red
         return cell
     }
 }
