@@ -518,7 +518,7 @@
     [self checkFrames:frames withContentSize:CGSizeMake(640, 1640)];
 }
 
--(void)testItemAndLineSpacing
+-(void)testItemAndLineSpacingVerticalScrolling
 {
     NSDictionary *frames = @{
                              IPF(0, 0, 0, 000, 212, 212), IPF(0, 1, 214, 000, 212, 212), IPF(0, 2, 428, 000, 212, 212),
@@ -535,6 +535,25 @@
     [self updateWindowFrame];
     
     [self checkFrames:frames withContentSize:CGSizeMake(640, 656)];
+}
+
+-(void)testItemAndLineSpacingHorizontalScrolling
+{
+    NSDictionary *frames = @{
+                             IPF(0, 0, 0, 000, 212, 212), IPF(1, 0, 222, 000, 212, 212), IPF(2, 0, 444, 000, 212, 212),
+                             IPF(0, 1, 0, 214, 212, 212), IPF(1, 1, 222, 214, 212, 212), IPF(2, 1, 444, 214, 212, 212),
+                             IPF(0, 2, 0, 428, 212, 212), IPF(1, 2, 222, 428, 212, 212), IPF(2, 2, 444, 428, 212, 212)
+                             };
+    
+    self.layout.itemSpacing = 2;
+    self.layout.lineSpacing = 10;
+    self.layout.lineSize = 0;
+    self.layout.lineItemCount = 3;
+    self.layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    self.layout.sectionsStartOnNewLine = NO;
+    [self updateWindowFrame];
+    
+    [self checkFrames:frames withContentSize:CGSizeMake(656, 640)];
 }
 
 -(void)checkFrames:(NSDictionary *)frames withContentSize:(CGSize)contentSize
