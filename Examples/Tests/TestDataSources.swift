@@ -1,5 +1,5 @@
 //
-//  TestDataSource.swift
+//  TestDataSources.swift
 //  RDHCollectionViewGridLayoutDemo
 //
 //  Created by Richard Hodgkins on 16/03/2015.

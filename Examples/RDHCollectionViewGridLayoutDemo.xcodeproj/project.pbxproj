@@ -21,7 +21,7 @@
 		4437B7DC1954CC83005CCBBC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4437B7DB1954CC83005CCBBC /* Images.xcassets */; };
 		4437B80F1956DF41005CCBBC /* RDHGridLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4437B80E1956DF41005CCBBC /* RDHGridLayoutTests.m */; };
 		444926661AB6C17A002DBB57 /* RDHStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444926651AB6C17A002DBB57 /* RDHStoryboardTests.swift */; };
-		4449266A1AB6C24D002DBB57 /* TestDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444926691AB6C24D002DBB57 /* TestDataSource.swift */; };
+		4449266A1AB6C24D002DBB57 /* TestDataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444926691AB6C24D002DBB57 /* TestDataSources.swift */; };
 		4449266C1AB6C94C002DBB57 /* TestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4449266B1AB6C94C002DBB57 /* TestStoryboard.storyboard */; };
 		44F92B381C7E65E900A0AD0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F92B371C7E65E900A0AD0A /* AppDelegate.swift */; };
 		44F92B3A1C7E65E900A0AD0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F92B391C7E65E900A0AD0A /* ViewController.swift */; };
@@ -106,7 +106,7 @@
 		4437B8101956DF56005CCBBC /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		444926641AB6C179002DBB57 /* Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Bridging-Header.h"; sourceTree = "<group>"; };
 		444926651AB6C17A002DBB57 /* RDHStoryboardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDHStoryboardTests.swift; sourceTree = "<group>"; };
-		444926691AB6C24D002DBB57 /* TestDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDataSource.swift; sourceTree = "<group>"; };
+		444926691AB6C24D002DBB57 /* TestDataSources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDataSources.swift; sourceTree = "<group>"; };
 		4449266B1AB6C94C002DBB57 /* TestStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestStoryboard.storyboard; sourceTree = "<group>"; };
 		446C8D781BA76D7C00FFB0E3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		449FA2371B54490100EAD562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -221,7 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				4449266B1AB6C94C002DBB57 /* TestStoryboard.storyboard */,
-				444926691AB6C24D002DBB57 /* TestDataSource.swift */,
+				444926691AB6C24D002DBB57 /* TestDataSources.swift */,
 				4437B8011956DF0B005CCBBC /* Supporting Files */,
 				4437B80E1956DF41005CCBBC /* RDHGridLayoutTests.m */,
 				444926651AB6C17A002DBB57 /* RDHStoryboardTests.swift */,
@@ -467,7 +467,7 @@
 			files = (
 				4437B80F1956DF41005CCBBC /* RDHGridLayoutTests.m in Sources */,
 				444926661AB6C17A002DBB57 /* RDHStoryboardTests.swift in Sources */,
-				4449266A1AB6C24D002DBB57 /* TestDataSource.swift in Sources */,
+				4449266A1AB6C24D002DBB57 /* TestDataSources.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
