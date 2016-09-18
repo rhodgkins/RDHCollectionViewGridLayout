@@ -4,13 +4,11 @@
 //  The contents of this file are implicitly included at the beginning of every source file.
 //
 
-#ifdef __OBJC__
-    #import <UIKit/UIKit.h>
-    #import <Foundation/Foundation.h>
-    #import <CoreGraphics/CoreGraphics.h>
-#endif
+@import UIKit;
+@import Foundation;
+@import CoreGraphics;
 
-#define TestName() [[self.name stringByReplacingOccurrencesOfString:[NSString stringWithFormat:@"-[%@ ", NSStringFromClass([self class])] withString:@""] stringByReplacingOccurrencesOfString:@"]" withString:@""]
+#import "XCTestCase+Extensions.h"
 
 #define CGRectObject(x, y, width, height) [NSValue valueWithCGRect:CGRectMake(x, y, width, height)]
 

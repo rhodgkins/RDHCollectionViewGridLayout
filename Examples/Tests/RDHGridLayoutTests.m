@@ -558,7 +558,7 @@
 
 -(void)checkFrames:(NSDictionary *)frames withContentSize:(CGSize)contentSize
 {
-    NSAssert(frames.count == 9, @"Incorrect number of frames (%@)", TestName());
+    NSAssert(frames.count == 9, @"Incorrect number of frames (%@)", self.testCaseName);
     
     XCTestExpectation *expectation = [self expectationWithDescription:@"Frame checking"];
     
@@ -572,8 +572,8 @@
             frame.size.width = 2000;
             frame.size.height = 640;
         }
-        XCTAssertEqualRect(self.window.frame, frame, @"Incorrect window frame (%@", TestName());
-        XCTAssertEqualSize(self.collectionView.contentSize, contentSize, @"Incorrect content size (%@)", TestName());
+        XCTAssertEqualRect(self.window.frame, frame, @"Incorrect window frame (%@", self.testCaseName);
+        XCTAssertEqualSize(self.collectionView.contentSize, contentSize, @"Incorrect content size (%@)", self.testCaseName);
     
         [frames enumerateKeysAndObjectsUsingBlock:^(NSIndexPath *indexPath, NSValue *vRect, BOOL *stop) {
             
@@ -582,7 +582,7 @@
             CGRect expectedFrame = [vRect CGRectValue];
             CGRect actualFrame = [self.collectionView cellForItemAtIndexPath:indexPath].frame;
             
-            XCTAssertEqualRect(actualFrame, expectedFrame, @"Frame of %@ is incorrect (%@)", indexPathDesc, TestName());
+            XCTAssertEqualRect(actualFrame, expectedFrame, @"Frame of %@ is incorrect (%@)", indexPathDesc, self.testCaseName);
         }];
         
         [expectation fulfill];

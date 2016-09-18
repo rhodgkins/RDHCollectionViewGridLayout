@@ -23,7 +23,8 @@
 		444926661AB6C17A002DBB57 /* RDHStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444926651AB6C17A002DBB57 /* RDHStoryboardTests.swift */; };
 		4449266A1AB6C24D002DBB57 /* TestDataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444926691AB6C24D002DBB57 /* TestDataSources.swift */; };
 		4449266C1AB6C94C002DBB57 /* TestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4449266B1AB6C94C002DBB57 /* TestStoryboard.storyboard */; };
-		445AEA2E1D8EE6A7009FFBFF /* RDHEmptyGridLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 445AEA2D1D8EE6A7009FFBFF /* RDHEmptyGridLayoutTests.m */; };
+		445AEA2E1D8EE6A7009FFBFF /* RDHEmptyGridLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445AEA2D1D8EE6A7009FFBFF /* RDHEmptyGridLayoutTests.swift */; };
+		44BA60941D8EFC3600444CD8 /* XCTestCase+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BA60931D8EFC3600444CD8 /* XCTestCase+Extensions.m */; };
 		44F92B381C7E65E900A0AD0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F92B371C7E65E900A0AD0A /* AppDelegate.swift */; };
 		44F92B3A1C7E65E900A0AD0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F92B391C7E65E900A0AD0A /* ViewController.swift */; };
 		44F92B3D1C7E65E900A0AD0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F92B3B1C7E65E900A0AD0A /* Main.storyboard */; };
@@ -109,9 +110,11 @@
 		444926651AB6C17A002DBB57 /* RDHStoryboardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDHStoryboardTests.swift; sourceTree = "<group>"; };
 		444926691AB6C24D002DBB57 /* TestDataSources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDataSources.swift; sourceTree = "<group>"; };
 		4449266B1AB6C94C002DBB57 /* TestStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestStoryboard.storyboard; sourceTree = "<group>"; };
-		445AEA2D1D8EE6A7009FFBFF /* RDHEmptyGridLayoutTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDHEmptyGridLayoutTests.m; sourceTree = "<group>"; };
+		445AEA2D1D8EE6A7009FFBFF /* RDHEmptyGridLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDHEmptyGridLayoutTests.swift; sourceTree = "<group>"; };
 		446C8D781BA76D7C00FFB0E3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		449FA2371B54490100EAD562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44BA60921D8EFC3600444CD8 /* XCTestCase+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XCTestCase+Extensions.h"; sourceTree = "<group>"; };
+		44BA60931D8EFC3600444CD8 /* XCTestCase+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XCTestCase+Extensions.m"; sourceTree = "<group>"; };
 		44F92B301C7E4A6000A0AD0A /* RDHCollectionViewGridLayout.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = RDHCollectionViewGridLayout.xcconfig; sourceTree = "<group>"; };
 		44F92B351C7E65E900A0AD0A /* AppleTVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleTVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F92B371C7E65E900A0AD0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -226,9 +229,8 @@
 				444926691AB6C24D002DBB57 /* TestDataSources.swift */,
 				4437B8011956DF0B005CCBBC /* Supporting Files */,
 				4437B80E1956DF41005CCBBC /* RDHGridLayoutTests.m */,
-				445AEA2D1D8EE6A7009FFBFF /* RDHEmptyGridLayoutTests.m */,
+				445AEA2D1D8EE6A7009FFBFF /* RDHEmptyGridLayoutTests.swift */,
 				444926651AB6C17A002DBB57 /* RDHStoryboardTests.swift */,
-				444926641AB6C179002DBB57 /* Tests-Bridging-Header.h */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -238,6 +240,9 @@
 			children = (
 				446C8D781BA76D7C00FFB0E3 /* Info.plist */,
 				4437B8101956DF56005CCBBC /* Tests-Prefix.pch */,
+				444926641AB6C179002DBB57 /* Tests-Bridging-Header.h */,
+				44BA60921D8EFC3600444CD8 /* XCTestCase+Extensions.h */,
+				44BA60931D8EFC3600444CD8 /* XCTestCase+Extensions.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -468,9 +473,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				445AEA2E1D8EE6A7009FFBFF /* RDHEmptyGridLayoutTests.m in Sources */,
+				445AEA2E1D8EE6A7009FFBFF /* RDHEmptyGridLayoutTests.swift in Sources */,
 				4437B80F1956DF41005CCBBC /* RDHGridLayoutTests.m in Sources */,
 				444926661AB6C17A002DBB57 /* RDHStoryboardTests.swift in Sources */,
+				44BA60941D8EFC3600444CD8 /* XCTestCase+Extensions.m in Sources */,
 				4449266A1AB6C24D002DBB57 /* TestDataSources.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

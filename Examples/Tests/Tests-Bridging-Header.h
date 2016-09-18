@@ -3,3 +3,5 @@
 //
 
 @import RDHCollectionViewGridLayout;
+
+#import "XCTestCase+Extensions.h"
