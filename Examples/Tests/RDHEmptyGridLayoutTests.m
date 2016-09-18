@@ -335,7 +335,7 @@
     [self checkFrames];
 }
 
--(void)testDirtyPixelCalculations
+-(void)testDirtyPixelCalculationsVerticalScrolling
 {
     self.layout.itemSpacing = 0;
     self.layout.lineSpacing = 0;
@@ -348,7 +348,20 @@
     [self checkFrames];
 }
 
--(void)testItemSpacing
+-(void)testDirtyPixelCalculationsHorizontalScrolling
+{
+    self.layout.itemSpacing = 0;
+    self.layout.lineSpacing = 0;
+    self.layout.lineSize = 0;
+    self.layout.lineItemCount = 3;
+    self.layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    self.layout.sectionsStartOnNewLine = NO;
+    [self updateWindowFrame];
+    
+    [self checkFrames];
+}
+
+-(void)testItemSpacingWithVerticalScrolling
 {
     self.layout.itemSpacing = 2;
     self.layout.lineSpacing = 0;
@@ -361,7 +374,20 @@
     [self checkFrames];
 }
 
--(void)testLineSpacing
+-(void)testItemSpacingWithHorizontalScrolling
+{
+    self.layout.itemSpacing = 2;
+    self.layout.lineSpacing = 0;
+    self.layout.lineSize = 0;
+    self.layout.lineItemCount = 3;
+    self.layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    self.layout.sectionsStartOnNewLine = NO;
+    [self updateWindowFrame];
+    
+    [self checkFrames];
+}
+
+-(void)testLineSpacingVerticalScrolling
 {
     self.layout.itemSpacing = 0;
     self.layout.lineSpacing = 10;
@@ -374,13 +400,39 @@
     [self checkFrames];
 }
 
--(void)testItemAndLineSpacing
+-(void)testLineSpacingHorizontalScrolling
+{
+    self.layout.itemSpacing = 0;
+    self.layout.lineSpacing = 10;
+    self.layout.lineSize = 0;
+    self.layout.lineItemCount = 2;
+    self.layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    self.layout.sectionsStartOnNewLine = NO;
+    [self updateWindowFrame];
+    
+    [self checkFrames];
+}
+
+-(void)testItemAndLineSpacingVerticalScrolling
 {
     self.layout.itemSpacing = 2;
     self.layout.lineSpacing = 10;
     self.layout.lineSize = 0;
     self.layout.lineItemCount = 3;
     self.layout.scrollDirection = UICollectionViewScrollDirectionVertical;
+    self.layout.sectionsStartOnNewLine = NO;
+    [self updateWindowFrame];
+    
+    [self checkFrames];
+}
+
+-(void)testItemAndLineSpacingHorizontalScrolling
+{
+    self.layout.itemSpacing = 2;
+    self.layout.lineSpacing = 10;
+    self.layout.lineSize = 0;
+    self.layout.lineItemCount = 3;
+    self.layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     self.layout.sectionsStartOnNewLine = NO;
     [self updateWindowFrame];
     
