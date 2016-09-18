@@ -145,7 +145,7 @@
     self.layout.sectionsStartOnNewLine = NO;
     [self updateWindowFrame];
     
-    [self checkFrames:frames];
+    [self checkFrames:frames withContentSize:CGSizeMake(640, 600)];
 }
 
 -(void)testSizeLocationsWithHorizontalScrollViewSectionsStartOnNewLineNO
@@ -165,7 +165,7 @@
     self.layout.sectionsStartOnNewLine = NO;
     [self updateWindowFrame];
 
-    [self checkFrames:frames];
+    [self checkFrames:frames withContentSize:CGSizeMake(600, 640)];
 }
 
 -(void)testSizeLocationsWithVerticalScrollViewSectionsStartOnNewLineYES
@@ -187,7 +187,7 @@
     self.layout.sectionsStartOnNewLine = YES;
     [self updateWindowFrame];
     
-    [self checkFrames:frames];
+    [self checkFrames:frames withContentSize:CGSizeMake(640, 720)];
 }
 
 -(void)testSizeLocationsWithHorizontalScrollViewSectionsStartOnNewLineYES
@@ -207,7 +207,7 @@
     self.layout.sectionsStartOnNewLine = YES;
     [self updateWindowFrame];
     
-    [self checkFrames:frames];
+    [self checkFrames:frames withContentSize:CGSizeMake(720, 640)];
 }
 
 -(void)testMultiplierDimensionLocationsWithVerticalScrollViewSectionsStartOnNewLineNO
@@ -228,7 +228,7 @@
     self.layout.sectionsStartOnNewLine = NO;
     [self updateWindowFrame];
     
-    [self checkFrames:frames];
+    [self checkFrames:frames withContentSize:CGSizeMake(640, 800)];
 }
 
 -(void)testMultiplierDimensionLocationsWithHorizontalScrollViewSectionsStartOnNewLineNO
@@ -248,7 +248,7 @@
     self.layout.sectionsStartOnNewLine = NO;
     [self updateWindowFrame];
     
-    [self checkFrames:frames];
+    [self checkFrames:frames withContentSize:CGSizeMake(800, 640)];
 }
 
 -(void)testMultiplierDimensionLocationsWithVerticalScrollViewSectionsStartOnNewLineYES
@@ -270,7 +270,7 @@
     self.layout.sectionsStartOnNewLine = YES;
     [self updateWindowFrame];
     
-    [self checkFrames:frames];
+    [self checkFrames:frames withContentSize:CGSizeMake(640, 960)];
 }
 
 -(void)testMultiplierDimensionLocationsWithHorizontalScrollViewSectionsStartOnNewLineYES
@@ -290,7 +290,7 @@
     self.layout.sectionsStartOnNewLine = YES;
     [self updateWindowFrame];
     
-    [self checkFrames:frames];
+    [self checkFrames:frames withContentSize:CGSizeMake(960, 640)];
 }
 
 -(void)testExtensionDimensionLocationsWithVerticalScrollViewSectionsStartOnNewLineNO
@@ -311,7 +311,7 @@
     self.layout.sectionsStartOnNewLine = NO;
     [self updateWindowFrame];
     
-    [self checkFrames:frames];
+    [self checkFrames:frames withContentSize:CGSizeMake(640, 1850)];
 }
 
 -(void)testExtensionDimensionLocationsWithHorizontalScrollViewSectionsStartOnNewLineNO
@@ -331,7 +331,7 @@
     self.layout.sectionsStartOnNewLine = NO;
     [self updateWindowFrame];
     
-    [self checkFrames:frames];
+    [self checkFrames:frames withContentSize:CGSizeMake(1850, 640)];
 }
 
 -(void)testExtensionDimensionLocationsWithVerticalScrollViewSectionsStartOnNewLineYES
@@ -353,7 +353,7 @@
     self.layout.sectionsStartOnNewLine = YES;
     [self updateWindowFrame];
     
-    [self checkFrames:frames];
+    [self checkFrames:frames withContentSize:CGSizeMake(640, 2220)];
 }
 
 -(void)testExtensionWithHorizontalScrollViewSectionsStartOnNewLineYES
@@ -373,7 +373,7 @@
     self.layout.sectionsStartOnNewLine = YES;
     [self updateWindowFrame];
     
-    [self checkFrames:frames];
+    [self checkFrames:frames withContentSize:CGSizeMake(2220, 640)];
 }
 
 -(void)testAutomaticDimensionLocationsWithVerticalScrollViewSectionsStartOnNewLineNO
@@ -394,7 +394,7 @@
     self.layout.sectionsStartOnNewLine = NO;
     [self updateWindowFrame];
     
-    [self checkFrames:frames];
+    [self checkFrames:frames withContentSize:CGSizeMake(640, 1600)];
 }
 
 -(void)testAutomaticDimensionLocationsWithHorizontalScrollViewSectionsStartOnNewLineNO
@@ -414,7 +414,7 @@
     self.layout.sectionsStartOnNewLine = NO;
     [self updateWindowFrame];
     
-    [self checkFrames:frames];
+    [self checkFrames:frames withContentSize:CGSizeMake(1600, 640)];
 }
 
 -(void)testAutomaticDimensionLocationsWithVerticalScrollViewSectionsStartOnNewLineYES
@@ -436,7 +436,7 @@
     self.layout.sectionsStartOnNewLine = YES;
     [self updateWindowFrame];
     
-    [self checkFrames:frames];
+    [self checkFrames:frames withContentSize:CGSizeMake(640, 1920)];
 }
 
 -(void)testAutomaticWithHorizontalScrollViewSectionsStartOnNewLineYES
@@ -456,7 +456,7 @@
     self.layout.sectionsStartOnNewLine = YES;
     [self updateWindowFrame];
     
-    [self checkFrames:frames];
+    [self checkFrames:frames withContentSize:CGSizeMake(1920, 640)];
 }
 
 -(void)testDirtyPixelCalculations
@@ -475,7 +475,7 @@
     self.layout.sectionsStartOnNewLine = NO;
     [self updateWindowFrame];
     
-    [self checkFrames:frames];
+    [self checkFrames:frames withContentSize:CGSizeMake(640, 639)];
 }
 
 -(void)testItemSpacing
@@ -494,7 +494,7 @@
     self.layout.sectionsStartOnNewLine = NO;
     [self updateWindowFrame];
     
-    [self checkFrames:frames];
+    [self checkFrames:frames withContentSize:CGSizeMake(640, 636)];
 }
 
 -(void)testLineSpacing
@@ -515,7 +515,7 @@
     self.layout.sectionsStartOnNewLine = NO;
     [self updateWindowFrame];
     
-    [self checkFrames:frames];
+    [self checkFrames:frames withContentSize:CGSizeMake(640, 1640)];
 }
 
 -(void)testItemAndLineSpacing
@@ -534,12 +534,12 @@
     self.layout.sectionsStartOnNewLine = NO;
     [self updateWindowFrame];
     
-    [self checkFrames:frames];
+    [self checkFrames:frames withContentSize:CGSizeMake(640, 656)];
 }
 
--(void)checkFrames:(NSDictionary *)frames
+-(void)checkFrames:(NSDictionary *)frames withContentSize:(CGSize)contentSize
 {
-    NSAssert(frames.count == 9, @"Incorrect number of frames");
+    NSAssert(frames.count == 9, @"Incorrect number of frames (%@)", TestName());
     
     XCTestExpectation *expectation = [self expectationWithDescription:@"Frame checking"];
     
@@ -553,17 +553,17 @@
             frame.size.width = 2000;
             frame.size.height = 640;
         }
-        XCTAssertEqualRect(self.window.frame, frame, @"Incorrect window frame");
+        XCTAssertEqualRect(self.window.frame, frame, @"Incorrect window frame (%@", TestName());
+        XCTAssertEqualSize(self.collectionView.contentSize, contentSize, @"Incorrect content size (%@)", TestName());
     
         [frames enumerateKeysAndObjectsUsingBlock:^(NSIndexPath *indexPath, NSValue *vRect, BOOL *stop) {
             
             NSString *indexPathDesc = [NSString stringWithFormat:@"NSIndexPath(%ld,%ld)", (long) indexPath.section, (long) indexPath.row];
-            NSString *testName = [[self.name stringByReplacingOccurrencesOfString:[NSString stringWithFormat:@"-[%@ ", NSStringFromClass([self class])] withString:@""] stringByReplacingOccurrencesOfString:@"]" withString:@""];
             
             CGRect expectedFrame = [vRect CGRectValue];
             CGRect actualFrame = [self.collectionView cellForItemAtIndexPath:indexPath].frame;
             
-            XCTAssertEqualRect(actualFrame, expectedFrame, @"Frame of %@ is incorrect (%@)", indexPathDesc, testName);
+            XCTAssertEqualRect(actualFrame, expectedFrame, @"Frame of %@ is incorrect (%@)", indexPathDesc, TestName());
         }];
         
         [expectation fulfill];
