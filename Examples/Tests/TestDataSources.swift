@@ -22,7 +22,26 @@ import UIKit.UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: type(of: self).CellID, for:indexPath) 
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: type(of: self).CellID, for:indexPath)
+        cell.backgroundColor = UIColor.red
+        return cell
+    }
+}
+
+@objc final class EmptyTestDataSource: NSObject, UICollectionViewDataSource {
+    
+    class var CellID: String { return "CellID" }
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: type(of: self).CellID, for:indexPath)
         cell.backgroundColor = UIColor.red
         return cell
     }
