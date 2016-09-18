@@ -6,7 +6,7 @@ RDHCollectionViewGridLayout
 [![Pod Platform](http://img.shields.io/cocoapods/p/RDHCollectionViewGridLayout.svg)](http://cocoadocs.org/docsets/RDHCollectionViewGridLayout/)
 [![Pod License](http://img.shields.io/cocoapods/l/RDHCollectionViewGridLayout.svg)](http://opensource.org/licenses/MIT)
 
-Works and tested on iOS 6.0 to 9.2 (under Xcode 7.2), but if you find any issues please [report](https://github.com/rhodgkins/RDHCollectionViewGridLayout/issues) them!
+Works and tested on iOS 6.0 to 10.0 (under Xcode 8.0), but if you find any issues please [report](https://github.com/rhodgkins/RDHCollectionViewGridLayout/issues) them!
 
 Carthage
 ---------
