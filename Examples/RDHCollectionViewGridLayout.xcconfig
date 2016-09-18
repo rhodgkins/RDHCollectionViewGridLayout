@@ -10,7 +10,7 @@
 
 PRODUCT_NAME                            = RDHCollectionViewGridLayout
 PRODUCT_BUNDLE_IDENTIFIER               = uk.co.rhodgkins.$(PRODUCT_NAME:rfc1034identifier)
-CVGL_VERSION                            = 1.2.4
+CVGL_VERSION                            = 1.2.5
 
 // Universal Framework
 APPLICATION_EXTENSION_API_ONLY          = YES
